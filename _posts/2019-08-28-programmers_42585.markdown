@@ -8,9 +8,6 @@ classes: wide
 
 [프로그래머스 코딩테스트연습 연습문제 소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/12921)
 
-![쇠파이프](https://grepp-programmers.s3.amazonaws.com/files/ybm/dbd166625b/d3ae656b-bb7b-421c-9f74-fa9ea800b860.png){: .align-center}
-
-
 문제 설명
 1부터 입력받은 숫자 n 사이에 있는 소수의 개수를 반환하는 함수, solution을 만들어 보세요.
 
