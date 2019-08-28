@@ -2,5 +2,5 @@
 layout: tags
 author_profile: true
 title: Tags
-permalink: /tag/
+permalink: /tags/
 ---
