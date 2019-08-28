@@ -3,11 +3,11 @@ main:
   - title: "About Me"
     url: /about/
   - title: "Post"
-    url: /post/
+    url: /posts/
   - title: "Category"
-    url: /category/
+    url: /categories/
   - title: "Tag"
-    url: /tag/
+    url: /tags/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
