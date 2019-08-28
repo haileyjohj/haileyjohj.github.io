@@ -109,10 +109,8 @@ analytics:
 author:
   name             : "상상조각"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "실패한 경험은 없어. 
-  
-  천천히 배우며, 
-  
+  bio              : "실패한 경험은 없어.   
+  천천히 배우며,    
   취미로 코딩하는 개발자"
   location         : "Tokyo, Japan"
   email            :
