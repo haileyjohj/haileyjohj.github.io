@@ -5,9 +5,9 @@ categories: algorithm
 tags: programmers java
 classes: wide
 ---
-
-[프로그래머스 코딩테스트 연습 해시 위장](https://programmers.co.kr/learn/courses/30/lessons/42578)
-
+  
+[프로그래머스 코딩테스트 연습 해시 위장](https://programmers.co.kr/learn/courses/30/lessons/42578)  
+  
 > ### 문제 설명  
   
 스파이들은 매일 다른 옷을 조합하여 입어 자신을 위장합니다.  
@@ -74,6 +74,8 @@ face에 해당하는 의상이 crowmask, bluesunglasses, smoky_makeup이므로
   
 `HashMap`을 사용해서 해결.  
 아직 익숙하지 않은 부분들이 많아서 개념부터 다시 정리할 필요성을 느낀다.  
+  
+[참고 Java Map/HashMap](https://bvc12.tistory.com/163)
   
   
 > ### 코드  
