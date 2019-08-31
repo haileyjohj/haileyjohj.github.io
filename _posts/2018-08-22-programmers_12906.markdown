@@ -38,10 +38,10 @@ classes: wide
 
 
 >### 코드   
+java.lang.Integer.intValue()  
 
-java.lang.Integer.intValue() 이 있었지;  
 
-```Java   
+```java
 import java.util.*;
 
 public class Solution {
@@ -69,7 +69,7 @@ public class Solution {
 }
 ```    
 
->### 다른 사람 풀이   
+>### 다른 사람 풀이    
 
 ```Java  
 import java.util.*;
