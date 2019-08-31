@@ -1,0 +1,63 @@
+---
+title:  "[Java][프로그래머스 Lv.1] 가운데 글자 가져오기"
+date:   2019-08-22 17:18:24 +0900
+categories: algorithm
+tags: programmers java
+classes: wide
+---  
+
+[프로그래머스 연습문제 가운데 글자 가져오기](https://programmers.co.kr/learn/courses/30/lessons/12903)    
+
+
+> ### 문제 설명  
+
+단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다.  
+
+#### 제한사항  
+
+s는 길이가 1 이상, 100이하인 스트링입니다.  
+
+
+#### 입출력 예    
+
+|    s    | return |
+|:-------:|:------:|
+| "abcde" | "c"    |
+| "qwer"  | "we"   |  
+
+>### 코드  
+  
+```java  
+class Solution {
+  public String solution(String s) {
+      String answer = "";
+
+      String[] sSplit = s.split("");
+      int len = sSplit.length;
+
+      if(len%2==0){
+         answer = sSplit[mid-1] +""+ sSplit[mid] ;
+      }else{
+          answer = sSplit[mid];
+      }
+      return answer;
+  }
+}
+```  
+
+
+>### 다른 사람 풀이  
+
+```java  
+class StringExercise{
+    String getMiddle(String word){
+
+        return word.substring((word.length()-1) / 2, word.length()/2 + 1);    
+    }
+    // 아래는 테스트로 출력해 보기 위한 코드입니다.
+    public static void  main(String[] args){
+        StringExercise se = new StringExercise();
+        System.out.println(se.getMiddle("power"));
+    }
+}
+```
