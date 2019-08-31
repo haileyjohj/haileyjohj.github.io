@@ -45,7 +45,7 @@ arr의 모든 원소는 1으로 나누어 떨어집니다. 원소를 오름차�
 
 >### 코드
 
-```Java
+```java
 import java.util.*;
 
 class Solution {
@@ -75,7 +75,7 @@ class Solution {
 
 >### 다른 사람 풀이
 
-```Java
+```java
 import java.util.Arrays;
 
 class Divisible {

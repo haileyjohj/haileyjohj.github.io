@@ -50,7 +50,7 @@ classes: wide
 for문을 너무 많이 사용;  
 최소한으로 사용하면서 할 수 있는 방법을 생각해보자;  
 
-```Java  
+```java  
 class Solution {
     public int solution(int n, int[] lost, int[] reserve) {
         int answer = n-lost.length;
@@ -90,7 +90,7 @@ class Solution {
 
 >### 다른 사람 풀이  
 
-```Java   
+```java   
 
 class Solution {
     public int solution(int n, int[] lost, int[] reserve) {

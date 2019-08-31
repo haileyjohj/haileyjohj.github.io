@@ -30,7 +30,7 @@ classes: wide
 
 >### 코드
 
-```Java   
+```java   
 class Solution {
   public String solution(int a, int b) {
       String answer = "";
@@ -48,7 +48,7 @@ class Solution {
 
 >### 다른 사람 풀이  
 
-```Java  
+```java  
 
 import java.util.*;
 
