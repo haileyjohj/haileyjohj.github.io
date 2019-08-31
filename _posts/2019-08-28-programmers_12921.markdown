@@ -1,5 +1,5 @@
 ---
-title:  "[프로그래머스 Lv.1] 소수 찾기 _ Java"
+title:  "[Java][프로그래머스 Lv.1] 소수 찾기"
 date:   2019-08-27 12:45:24 +0900
 categories: algorithm
 tags: programmers java
@@ -38,17 +38,17 @@ n은 2이상 1000000이하의 자연수입니다.
 ```java
 class Solution {
   public int solution(int n) {
-      
+
       int[] primeN = new int[n+1];
       int i, j, cnt = 0;
-      
+
       if(n>=2 && n<=1000000){
           //소수 구하기
           for(i=0; i<=n; i++){
               primeN[i] = 0;
           }
           primeN[1] = 1;
-          
+
           for(i=2; i<=n; i++) {
               for(j=2; i*j<=n; j++){
                   primeN[i*j] = 1;
