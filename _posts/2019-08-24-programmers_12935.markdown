@@ -1,7 +1,7 @@
 ---
 title:  "[Java][프로그래머스 Lv.1] 제일 작은 수 제거하기"
 date:   2019-08-24 17:29:24 +0900
-categories: algorithm
+categories: Algorithm
 tags: programmers java
 classes: wide
 ---  
@@ -23,7 +23,7 @@ classes: wide
 |:---------:	|:-------:	|
 | [4,3,2,1] 	| [4,3,2] 	|
 | [10]      	| [-1]    	|
-  
+
 >### 내 코드  
 
 문제에서 시키지도 않은 정렬을 해서; 한참 헤맨  

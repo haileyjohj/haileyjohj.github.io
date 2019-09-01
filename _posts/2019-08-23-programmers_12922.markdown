@@ -1,7 +1,7 @@
 ---
 title:  "[Java][프로그래머스 Lv.1] 수박수박수박수박수박수?"
 date:   2019-08-23 14:41:24 +0900
-categories: algorithm
+categories: Algorithm
 tags: programmers java
 classes: wide
 ---  
@@ -57,7 +57,7 @@ class Solution {
 
 repeated = new String(new char[n]).replace("\0", s);  
 n은 문자열 s를 몇번 반복할건지에 대한 변수  
-  
+
 ```java
 public class WaterMelon {
     public String watermelon(int n){

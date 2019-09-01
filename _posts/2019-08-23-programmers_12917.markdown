@@ -1,7 +1,7 @@
 ---
 title:  "[Java][프로그래머스 Lv.1] 문자열 내림차순으로 배치하기 - Collections.reverseOrder() , Comparator.reverseOrder()"
 date:   2019-08-23 13:24:24 +0900
-categories: algorithm
+categories: Algorithm
 tags: programmers java
 classes: wide
 ---  
@@ -24,7 +24,7 @@ s는 영문 대소문자로만 구성되어 있으며, 대문자는 소문자보
 | "Zbcdefg" 	| "gfedcbZ" 	|  
 
 >### 코드  
-  
+
 Collections.reverseOrder()    
 Comparator.reverseOrder()  
 [참고 : StringBuilder](https://hardlearner.tistory.com/288)   

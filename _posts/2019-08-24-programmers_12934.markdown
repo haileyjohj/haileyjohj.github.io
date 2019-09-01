@@ -1,7 +1,7 @@
 ---
 title:  "[Java][프로그래머스 Lv.1] 정수 제곱근 판별 - Math"
 date:   2019-08-24 17:29:24 +0900
-categories: algorithm
+categories: Algorithm
 tags: programmers java
 classes: wide
 ---  
