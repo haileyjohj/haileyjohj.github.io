@@ -8,7 +8,7 @@ classes: wide
 
 [프로그래머스 코딩테스트연습 완전탐색 모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840)
 
-> ### 문제 설명   
+>## 문제 설명   
 
 수포자는 수학을 포기한 사람의 준말입니다. 수포자 삼인방은 모의고사에 수학 문제를 전부 찍으려 합니다. 수포자는 1번 문제부터 마지막 문제까지 다음과 같이 찍습니다.  
 
@@ -47,13 +47,13 @@ classes: wide
 - 모든 사람이 2문제씩을 맞췄습니다.  
 
 
-> ### 풀이  
+>## 풀이  
 
 [참고 Java Stream 관련](https://futurecreator.github.io/2018/08/26/java-8-streams/)  
 
 
 
-> ### 코드  
+>## 코드  
 
 ```java  
 import java.util.ArrayList;

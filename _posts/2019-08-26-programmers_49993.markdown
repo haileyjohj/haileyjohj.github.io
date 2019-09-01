@@ -8,7 +8,7 @@ classes: wide
 
 [프로그래머스 2018 윈터코딩 스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993)   
 
-> ### 문제 설명  
+>## 문제 설명  
 
 선행 스킬이란 어떤 스킬을 배우기 전에 먼저 배워야 하는 스킬을 뜻합니다.
 
@@ -40,7 +40,7 @@ classes: wide
 - "AECB": 가능한 스킬트리입니다.
 - "BDA": B 스킬을 배우기 전에 C 스킬을 먼저 배워야 합니다. 불가능한 스킬트리입니다.
 
->### 코드
+>## 코드
 
 ```java
 import java.util.*;

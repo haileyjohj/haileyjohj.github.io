@@ -8,7 +8,7 @@ classes: wide
 
 [프로그래머스 연습문제 124 나라의 숫자](https://programmers.co.kr/learn/courses/30/lessons/12899)   
 
-> ### 문제 설명  
+>## 문제 설명  
 
 124 나라가 있습니다. 124 나라에서는 10진법이 아닌 다음과 같은 자신들만의 규칙으로 수를 표현합니다.
 
@@ -40,7 +40,7 @@ classes: wide
 | 3 	| 4      	|
 | 4 	| 11     	|
 
->### 코드
+>## 코드
 
 ```java
 import java.util.*;

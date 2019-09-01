@@ -8,7 +8,7 @@ classes: wide
 
 [프로그래머스 코딩테스트연습 스택/큐 프린터](https://programmers.co.kr/learn/courses/30/lessons/42587)  
 
->### 문제 설명  
+>## 문제 설명  
 
 
   일반적인 프린터는 인쇄 요청이 들어온 순서대로 인쇄합니다.  
@@ -60,7 +60,7 @@ while문을 돌면서 location 하나씩 제거해준다.
 큐에서 가장 큰 수가 앞에 오고, location이 0일때가 답!  
 
 
->### 코드  
+>## 코드  
 
 
 ```java
