@@ -2,7 +2,7 @@
 title:  "[Java][프로그래머스 Lv.1] x만큼 간격이 있는 n개의 숫자"
 date:   2019-08-26 10:32:24 +0900
 categories: Algorithm
-tags: programmers java
+tags: programmers Java
 classes: wide
 ---  
 

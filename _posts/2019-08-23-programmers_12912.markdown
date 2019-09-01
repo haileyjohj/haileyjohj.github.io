@@ -2,7 +2,7 @@
 title:  "[Java][프로그래머스 Lv.1] 두 정수 사이의 합"
 date:   2019-08-23 10:22:24 +0900
 categories: Algorithm
-tags: programmers java
+tags: programmers Java
 classes: wide
 ---  
 

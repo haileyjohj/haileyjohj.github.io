@@ -2,7 +2,7 @@
 title:  "[Java][프로그래머스 Lv.1] 이상한 문자 만들기"
 date:   2019-08-23 17:46:24 +0900
 categories: Algorithm
-tags: programmers java
+tags: programmers Java
 classes: wide
 ---  
 
