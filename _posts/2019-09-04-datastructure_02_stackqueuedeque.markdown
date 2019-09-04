@@ -1,7 +1,7 @@
 ---
 title:  "[자료구조] 스택(Stack) / 큐(Queue) / 데크(Deque)"
 excerpt: "선형 자료구조"
-last_modified_at:   2019-09-04 14:44:24 +0900
+last_modified_at:   2019-09-04 15:18:24 +0900
 categories: Data Structure
 tags:
 - 자료구조
