@@ -12,7 +12,7 @@ tags:
   
   
 ![스택/큐/데크 비교](https://nakjunizm.github.io/2017/02/24/Queue_And_Deque/queue1.png)  
-참고 : https://nakjunizm.github.io
+출처 : https://nakjunizm.github.io
   
   
 >## 스택(Stack)  
