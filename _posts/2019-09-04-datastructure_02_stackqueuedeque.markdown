@@ -65,8 +65,8 @@ public class QueueTest {
   
 ```java 
 import java.util.*;
-class Deque {
-    public void deque() {
+class DequeTest {
+    public static void main(String[] args) {
       Deque<Integer> deque = new ArrayDeque<>(8);
       deque.push(5); // [5] 
       deque.push(4); // [5,4] 
