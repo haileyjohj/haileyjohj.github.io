@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: http://haileyjohj.github.io/sitemap.xml
