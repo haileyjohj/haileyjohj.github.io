@@ -2,7 +2,7 @@
 title:  "[자료구조] 자료구조란"
 excerpt: "자료구조 공부 목차"
 last_modified_at:   2019-09-04 13:52:24 +0900
-categories: Data Structure
+categories: DataStructure
 tags:
 - 자료구조
 - 공부목차
