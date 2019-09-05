@@ -1,6 +1,6 @@
 ---
 title:  "[Java][프로그래머스 Lv.2] 카펫"
-excerpt: 2019-09-05 15:21:24 +0900
+excerpt: 2019-09-05 15:21:24
 last_modified_at:   2019-09-05 15:21:24 +0900
 categories: Algorithm
 tags:
