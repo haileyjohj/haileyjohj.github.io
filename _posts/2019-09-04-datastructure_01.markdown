@@ -16,7 +16,7 @@ tags:
   
 >## 자료구조 분류  
   
-![](/assets/images/data-structure.png)  
+![](/assets/images/data-structure.png){: .align-center}  
 [그림 : 초보몽키의 개발블로그](https://wayhome25.github.io/cs/2017/04/17/cs-18/)  
   
   
