@@ -15,12 +15,12 @@ tags:
 효과적으로 설계된 자료구조는 실행시간 혹은 메모리 용량과 같은 자원을 최소한으로 사용하면서 연산을 수행하도록 함.  
   
 >## 자료구조 분류  
+  
 ![](/assets/images/data-structure.png)  
 [그림 : 초보몽키의 개발블로그](https://wayhome25.github.io/cs/2017/04/17/cs-18/)  
   
   
 >## 공부 목차  
-  
   
 [목차 참고 : 킹포도의 코딩](https://kingpodo.tistory.com/21?category=805745)  
   
