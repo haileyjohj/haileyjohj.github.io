@@ -1,0 +1,14 @@
+---
+title:  "[TIL_190913] 기록 시작"
+last_modified_at:   2019-09-13 18:46:24 +0900
+categories: TIL(Today I Learned)
+tags:
+- TIL
+---
+
+>## 시작  
+  
+꾸준히 기록하고  
+내가 무엇이 부족하고 오늘 하루 어떻게 보냈는지  
+남겨야겠다. 이제 시작!  
+  
