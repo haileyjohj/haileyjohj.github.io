@@ -1,6 +1,6 @@
 ---
 title:  "[TIL_190913] 기록 시작"
-excerpt: 2019-09-13 18:46:24
+excerpt: &#128197; 2019-09-13 18:46:24
 last_modified_at:   2019-09-13 18:46:24 +0900
 categories: TIL
 tags:
