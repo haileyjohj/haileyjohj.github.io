@@ -1,6 +1,9 @@
 ---
 title:  "[Java기초이론] 기본형 매개변수, 참조형 매개변수"
 excerpt: "Java의 정석"
+toc: true
+toc_sticky: true
+toc_label: "페이지 주요 목차"
 last_modified_at:   2019-09-01 16:43:24 +0900
 categories: Java
 tags:

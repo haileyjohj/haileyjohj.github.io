@@ -1,6 +1,9 @@
 ---
 title:  "[Java기초이론] JVM의 메모리 구조"
 excerpt: "Java의 정석"
+toc: true
+toc_sticky: true
+toc_label: "페이지 주요 목차"
 last_modified_at:   2019-09-01 16:30:24 +0900
 categories: Java
 tags:
