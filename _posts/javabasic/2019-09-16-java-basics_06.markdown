@@ -29,8 +29,9 @@ tags:
 1) 접근 제어자는 조상 클래스의 메서드보다 좁은 범위로 변경 할 수 없다.  
 조상클래스에 정의된 메서드의 접근 제어자가 `protected`라면, 이를 오버라이딩하는 자손 클래스의 메서드는 접근 제어자가 `protected`나 `public`이어야한다.
 
-<center>public > protected > (default) > private </center>
-
+```
+public > protected > (default) > private
+```
 
 2) 조상 클래스의 메서드보다 많은 수의 예외를 선언할 수 없다.
 
