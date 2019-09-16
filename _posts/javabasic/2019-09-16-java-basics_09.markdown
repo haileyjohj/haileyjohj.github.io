@@ -1,10 +1,10 @@
 ---
 title:  "[Java기초이론] 제어자(modifier)"
-excerpt: "2019-09-16 14:42:24"
+excerpt: "2019-09-16 23:52:24"
 toc: true
 toc_sticky: true
 toc_label: "페이지 주요 목차"
-last_modified_at:   2019-09-16 14:42:24 +0900
+last_modified_at:   2019-09-16 23:52:24 +0900
 categories: Java
 tags:
 - Java
