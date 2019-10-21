@@ -2,5 +2,5 @@
 layout: resume
 author_profile: true
 title: Resume
-permalink: /resume/
+permalink: https://haileyjohj.github.io/resume/
 ---
