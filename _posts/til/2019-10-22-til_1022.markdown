@@ -1,6 +1,9 @@
 ---
 title:  "[TIL_191022] 토이프로젝트 전체 진행 순서"
 excerpt: 2019-10-22 14:06:24
+toc: true
+toc_sticky: true
+toc_label: "페이지 주요 목차"
 last_modified_at:   2019-10-22 14:06:24 +0900
 categories: TIL
 tags:
