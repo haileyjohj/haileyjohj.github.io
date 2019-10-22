@@ -1,7 +1,7 @@
 ---
-title:  "[TIL_191020] 토이프로젝트 전체 진행 순서"
-excerpt: 2019-10-20 18:46:24
-last_modified_at:   2019-10-20 18:46:24 +0900
+title:  "[TIL_191022] 토이프로젝트 전체 진행 순서"
+excerpt: 2019-10-22 14:06:24
+last_modified_at:   2019-10-22 14:06:24 +0900
 categories: TIL
 tags:
 - TIL
@@ -10,6 +10,7 @@ tags:
 
 
 >## ERD (Entity Relationship Diagram)
+
 말로 되어 있는 요구사항을 그림으로 그려내어 관계를 도출한 다이어 그램으로 표현
 
 
@@ -65,5 +66,5 @@ tags:
 
 ---
 
-[1. 참고 : 갓대희의 작은공간](https://goddaehee.tistory.com/122?category=281064)
+[1. 참고 : 갓대희의 작은공간](https://goddaehee.tistory.com/122?category=281064)  
 [2. 참고](http://fureweb.com/web-development-process-from-planning-to-deploy/)
