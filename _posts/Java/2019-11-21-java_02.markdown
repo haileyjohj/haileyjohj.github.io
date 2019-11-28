@@ -12,4 +12,9 @@ tags:
 - PDFBox
 ---
 
->## 작성중
+>## 참고 링크
+
+[Apache 사이트 내 샘플 다운로드](https://pdfbox.apache.org/2.0/examples.html)
+[PDFBox - Quick Guide](https://www.tutorialspoint.com/pdfbox/pdfbox_quick_guide.htm)
+[derveljunit 블로그 참고](https://derveljunit.tistory.com/294)
+
