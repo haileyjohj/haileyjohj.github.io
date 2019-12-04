@@ -111,14 +111,14 @@ author:
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "천천히 배우며, 즐기는 개발자."
   location         : "Tokyo, Japan"
-  email            :
+  email            : "hyejin.jo.0920@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:hyejin.jo.0920@gmail.com
-#    - label: "blog"
-#      icon: "fas fa-fw fa-link"
-#      url: "https://blog.naver.com/hailey_jo"
+      # url: mailto:hyejin.jo.0920@gmail.com
+    - label: "blog"
+      icon: "fas fa-fw fa-link"
+      url: "https://blog.naver.com/hailey_jo"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -231,6 +231,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jemoji
   - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
@@ -239,6 +240,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jemoji
   - jekyll-include-cache
 
 
@@ -266,7 +268,7 @@ tag_archive:
 #   layouts:
 #     category: archive-taxonomy
 #     tag: archive-taxonomy
-#   permalinks:
+   permalinks: /:year/:month/:day/:title/
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
@@ -288,6 +290,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      classes: wide
       read_time: false
       comments: true
       share: true
@@ -302,6 +305,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      classes: wide
       read_time: false
       comments: false
       share: true
