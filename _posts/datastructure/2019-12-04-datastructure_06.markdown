@@ -1,11 +1,12 @@
 ---
 title:  "[자료구조] 트리 간략 정리"
-excerpt: 
-last_modified_at:   2019-12-04 11:22:24 +0900
+date: 2019-12-04 11:22:24 +0900
 categories: DataStructure
 tags:
 - 자료구조
 - 트리
+toc : true
+last_modified_at:   2019-12-04 11:22:24 +0900
 ---
 
 >## 이진트리와 이진탐색트리  
