@@ -1,5 +1,6 @@
 ---
 title:  "[자료구조] 트리 간략 정리"
+excerpt: 트리구조에서 사용되는 용어 간략히 정리
 date: 2019-12-04 11:22:24 +0900
 categories: DataStructure
 tags: 자료구조 트리
