@@ -1,11 +1,9 @@
 ---
 title:  "[자료구조] 트리 간략 정리"
-excerpt : ""
 date: 2019-12-04 11:22:24 +0900
 categories: DataStructure
 tags: 자료구조 트리
-last_modified_at:   2019-12-04 11:22:24 +0900
-toc : false
+last_modified_at:   2019-12-04 11:52:24 +0900
 classes : wide
 ---
 
