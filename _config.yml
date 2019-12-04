@@ -268,7 +268,7 @@ tag_archive:
 #   layouts:
 #     category: archive-taxonomy
 #     tag: archive-taxonomy
-   permalinks: /:year/:month/:day/:title/
+#   permalinks: /:year/:month/:day/:title/
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
