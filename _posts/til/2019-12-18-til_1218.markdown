@@ -1,9 +1,12 @@
 ---
-title:  "[TIL_191218] "
+title:  "[TIL] 2019년 12월 18일"
 date: 2019-12-18 11:25:24
 categories: TIL
 tags: TIL
 last_modified_at: 2019-12-18 11:25:24
 ---
 
->## 오늘 한 일  
+>## 오늘 한 일   
+
+- git, atom 재설치, 크롬 에러
+- 트리, 그래프 자료구조, 알고리즘

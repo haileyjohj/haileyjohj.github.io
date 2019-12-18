@@ -1,5 +1,5 @@
 ---
-title:  "[TIL_191217] "
+title:  "[TIL] 2019년 12월 17일 "
 date: 2019-12-17 16:25:24
 categories: TIL
 tags: TIL
