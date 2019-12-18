@@ -1,0 +1,32 @@
+---
+title:  "[에러] 구글 크롬 앗, 이런! (Aw, Snap! Error)"
+excerpt: 페이지 표시 에러
+date: 2019-12-18 09:28:24 +0900
+categories: Error
+tags: 에러 크롬
+last_modified_at: 2019-12-18 09:28:24 +0900
+---
+
+>## 에러 발생  
+
+![크롬 앗, 이런! 에러](/assets/images/error/20191218_02.JPG){: .align-center}    
+
+잘 돌아가던 크롬이 갑자기 열리지 않기 시작, 뭐가 문제일까?
+삭제, 재설치도 여러번, 폴더명도 바꿔보고 최근에 설치했던 프로그램도 삭제하고 아주 이것저것 다 해보았다.
+
+>## 버전 업데이트 문제  
+
+2019년 12월 12일 구글 크롬 업데이트 버전이 올라왔나보다. 그리고 자동 업데이트가 되고 이런 현상이 발생한 듯, 이전 버전으로 돌려서 문제가 해결되었다.
+허무하게 해결되었지만, 혹시 다른 누군가가 나와 같은 현상을 겪으며 시간 낭비를 하게 될까 싶어 글로 남겨둔다.
+
+>## 크롬 구버전 다운로드 사이트  
+
+[Google Chrome Older Versions Download (Windows, Linux & Mac)](https://www.slimjet.com/chrome/google-chrome-old-version.php)  
+https://www.slimjet.com/chrome/google-chrome-old-version.php
+
+>## 해결  
+
+![크롬](/assets/images/error/20191218_01.JPG)  
+
+
+구글 로고가 이렇게 반갑다니, 결론은 버전 충돌로 인한 문제인 것 같다.  
