@@ -1,9 +1,0 @@
----
-title:  "[TIL_191218] "
-date: 2019-12-18 11:50:24
-categories: TIL
-tags: TIL
-last_modified_at: 2019-12-18 11:50:24
----
-
->## 오늘 한 일  
