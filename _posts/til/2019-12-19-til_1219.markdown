@@ -1,0 +1,28 @@
+---
+title:  "[TIL] 2019년 12월 19일 목요일"
+date: 2019-12-19 11:25:24
+categories: TIL
+tags: TIL
+last_modified_at: 2019-12-19 11:25:24
+---
+
+>## 오늘 할 일   
+
+- 트리와 그래프 알고리즘 문제풀이 [코딩인터뷰](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788966263080&orderClick=LAG&Kc=)
+- LC/RC 집에서 정리
+- 비트 조작 문제풀이 시작
+
+
+>## 오늘 한 일   
+
+- 김어준 뉴스공장
+- 트리와 그래프 알고리즘 문제풀이
+- BFS, DFS 알고리즘
+
+
+>## 오늘 느낀점   
+
+- 자료구조에 대한 개념을 다시 한번 정리하고, 알고리즘 풀이에 익숙해지도록;
+
+  
+>## 내일 할 일  
