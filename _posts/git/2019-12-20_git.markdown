@@ -1,12 +1,12 @@
 ---
 title: "[Git] Git 기본 : commit, branch, merge, rebase"
 excerpt: "Learn Git Branching 사이트에서 정리"
-
+date: 2019-12-20 16:16:24 +0900
 categories:
  Git
 tags:
 - git
-data: 2019-12-20T08:06:00-05:00
+data: 2019-12-20 16:16:24 +0900
 ---
 
 
