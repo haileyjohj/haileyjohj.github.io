@@ -1,10 +1,10 @@
 ---
-title: "[Git] 다음 단계로 : HEAD, "
+title: "[Git] 다음 단계로 : HEAD, 상대참조 캐럿(^), 틸트(~), 브랜치 강제 옮기기, 작업되돌리기 reset, revert"
 excerpt: Learn Git Branching 사이트에서 정리
-date: 2019-12-20 16:16:24 +0900
+date: 2019-12-20 17:16:24 +0900
 categories: Git
 tags: git
-last_modified_at: 2019-12-20 16:16:24 +0900
+last_modified_at: 2019-12-20 17:16:24 +0900
 ---
 
 >## Learn Git Branching
@@ -101,7 +101,7 @@ $ git branch -f master c6
 ```
 
 
-###Git에서 작업 되돌리기
+### Git에서 작업 되돌리기
 
 Git에는 작업한 것을 되돌리는 여러가지 방법이 있습니다. 변경내역을 되돌리는 것도 커밋과 마찬가지로 낮은 수준의 일(개별 파일이나 묶음을 스테이징 하는 것)과 높은 수준의 일(실제 변경이 복구되는 방법)이 있는데요, 여기서는 후자에 집중해 알려드릴게요.
 
