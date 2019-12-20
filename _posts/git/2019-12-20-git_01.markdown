@@ -12,7 +12,7 @@ last_modified_at: 2019-12-20 16:16:24 +0900
 git bash를 사용안하다보니 자꾸 까먹게된다.
 좋은 사이트가 재미있게 다시 접근!
 
-https://learngitbranching.js.org/
+[Learn Git Branching](https://learngitbranching.js.org/)
 
 >## git 기본
 
