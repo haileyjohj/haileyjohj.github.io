@@ -1,0 +1,124 @@
+---
+title: "[Git] 다음 단계로 : HEAD, "
+excerpt: Learn Git Branching 사이트에서 정리
+date: 2019-12-20 16:16:24 +0900
+categories: Git
+tags: git
+last_modified_at: 2019-12-20 16:16:24 +0900
+---
+
+>## Learn Git Branching
+
+git bash를 사용안하다보니 자꾸 까먹게된다.
+좋은 사이트가 재미있게 다시 접근!
+
+[Learn Git Branching](https://learngitbranching.js.org/)
+
+>## Git에서 여기저기로 옮기기
+
+### HEAD
+
+HEAD는 현재 체크아웃된 커밋을 가리킨다. -- 다시 말하자면 현재 작업중인 커밋(가장 최근 커밋).
+
+작업트리에 변화를 주는 git 명령어들은 대부분 HEAD를 변경하는것으로 시작한다.
+
+일반적으로 HEAD는 브랜치의 이름을 가리키고있다(bugFix와 같이). 커밋을 하게 되면, bugFix의 상태가 바뀌고 이 변경은 HEAD를 통해서 확인이 가능하다.
+
+
+### HEAD 분리하기
+HEAD를 분리한다는 것은 HEAD를 브랜치 대신 커밋에 붙이는 것을 의미한다.
+
+![](/assets/images/git/191220_03.JPG){: .align-center}
+
+`HEAD` -> `master` -> `C1`
+
+이렇게 바뀐다.
+
+`HEAD` -> `C1`
+
+```
+$ git checkout c1
+```
+
+
+### 상대 참조
+
+Git에서 여기저기 이동할 때 커밋의 해시를 사용하는 방법은 조금 귀찮다.  
+
+해시가 커밋의 고유한 값임을 보여줄 수 있을 만큼만 명시해주면 된다.
+fed2da64c0efc5293610bdd892f82a58e8cbc5d8 이 긴 문자열 대신 fed2만 입력해도 가능하다.
+
+상대 참조(Relative Ref)로 우리가 기억할 만한 지점(브랜치 bugFix라던가 HEAD라던가)에서 출발해서 이동하여 다른 지점에 도달해 작업을 할 수 있다.
+
+- 한번에 한 커밋 위로 움직이는 `^`
+- 한번에 여러 커밋 위로 올라가는 `~<num>`
+
+
+### 상대참조 캐럿 (^)
+
+참조 이름에 하나씩 추가할 때마다, 명시한 커밋의 부모를 찾게 된다.
+
+또한 참조인 HEAD도 상대참조를 위해 사용 가능하다.
+
+![](/assets/images/git/191220_04.JPG){: .align-center}
+
+```
+$ git checkout master^
+$ git checkout HEAD^
+```
+
+
+### 상대참조 틸트 (~)
+
+(~) 틸드 연산자는 (선택적) 올라가고 싶은 부모의 갯수가 뒤에 숫자를 기입한다.
+
+
+```
+$ git checkout HEAD~4
+```
+
+
+### 브랜치 강제로 옮기기
+
+제가 상대 참조를 사용하는 가장 일반적인 방법은 브랜치를 옮길 때 이다. -f 옵션을 이용해서 브랜치를 특정 커밋에 직접적으로 재지정 할 수 있다.
+
+![](/assets/images/git/191220_05.JPG){: .align-center}
+
+```
+$ git branch -f master HEAD~3
+```
+
+(강제로) master 브랜치를 HEAD에서 세번 뒤로 옮기는 방법.
+
+
+![](/assets/images/git/191220_06.JPG){: .align-center}
+![](/assets/images/git/191220_07.JPG){: .align-center}
+
+```
+$ git checkout HEAD~1
+$ git branch -f bugFix HEAD~1
+$ git branch -f master c6
+```
+
+
+###Git에서 작업 되돌리기
+
+Git에는 작업한 것을 되돌리는 여러가지 방법이 있습니다. 변경내역을 되돌리는 것도 커밋과 마찬가지로 낮은 수준의 일(개별 파일이나 묶음을 스테이징 하는 것)과 높은 수준의 일(실제 변경이 복구되는 방법)이 있는데요, 여기서는 후자에 집중해 알려드릴게요.
+
+
+1. git reset : git reset은 마치 애초에 커밋하지 않은 것처럼 예전 커밋으로 브랜치를 옮기는 것이다.
+
+
+![](/assets/images/git/191220_08.JPG){: .align-center}
+
+```
+$ git reset HEAD~1
+```
+
+2. git revert : 각자의 컴퓨터에서 작업하는 로컬 브랜치의 경우 리셋(reset)을 잘 쓸 수 있지만, "히스토리를 고쳐쓴다"는 점 때문에 다른 사람이 작업하는 리모트 브랜치에는 쓸 수 없다.
+
+![](/assets/images/git/191220_09.JPG){: .align-center}
+
+```
+$ git revert HEAD
+```
