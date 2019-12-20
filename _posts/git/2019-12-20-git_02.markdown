@@ -92,6 +92,9 @@ $ git branch -f master HEAD~3
 
 
 ![](/assets/images/git/191220_06.JPG){: .align-center}
+
+↓{: .align-center}
+
 ![](/assets/images/git/191220_07.JPG){: .align-center}
 
 ```
