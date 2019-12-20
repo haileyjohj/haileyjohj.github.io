@@ -1,0 +1,74 @@
+---
+title: "[Git] Git 기본 : commit, branch, merge, rebase"
+excerpt: "Learn Git Branching 사이트에서 정리"
+
+categories:
+ Git
+tags:
+- git
+data: 2019-12-20T08:06:00-05:00
+---
+
+
+>## Learn Git Branching
+
+git bash를 사용안하다보니 자꾸 까먹게된다.
+좋은 사이트가 재미있게 다시 접근!
+
+https://learngitbranching.js.org/
+
+>## git 기본
+
+### Git 커밋
+
+커밋은 Git 저장소에 디렉토리에 있는 모든 파일에 대한 스냅샷을 기록하는 것이다.
+
+Git은 가능한 한 커밋을 가볍게 유지하고자 하기때문에, 커밋할 때마다 디렉토리 전체를 복사하진 않는다. 각 커밋은 저장소의 이전 버전과 다음 버전의 변경내역 (`delta`라고도 함)을 저장한다. 그래서 대부분의 커밋이 그 커밋 위의 부모 커밋을 가리킨다
+
+```
+$ git commit
+```
+
+
+### Git 브랜치
+
+브랜치는 특정 커밋에 대한 참조(reference)에 지나지 않는다.
+
+```
+$ git branch bugFix // 브랜치 생성
+$ git checkout bugFix // bugFix 브랜치 커서
+```
+
+
+### 브랜치와 합치기(Merge)
+
+ Git의 합치기(merge)는 두 개의 부모(parent)를 가리키는 특별한 커밋을 만들어 낸다. 두개의 부모가 있는 커밋이라는 것은 "한 부모의 모든 작업내역과 나머지 부모의 모든 작업, 그리고 그 두 부모의 모든 부모들의 작업내역을 포함한다"라는 의미가 있다.
+
+![](/assets/images/git/191220_01.JPG){: .align-center}
+
+```
+$ git branch bugFix
+$ git checkout bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git merge bugFix
+```
+
+
+### Git 리베이스(Rebase)
+
+브랜치끼리의 작업을 접목하는 두번째 방법은 리베이스(rebase)이다. 리베이스는 기본적으로 커밋들을 모아서 복사한 뒤, 다른 곳에 떨궈 놓는 것이다.
+리베이스를 하면 커밋들의 흐름을 보기 좋게 한 줄로 만들 수 있다는 장점이 있고, 저장소의 커밋 로그와 이력이 한결 보기편하다.
+
+![](/assets/images/git/191220_02.JPG){: .align-center}
+
+```
+$ git branch bugFix
+$ git checkout bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git checkout bugFix
+$ git rebase master
+```
