@@ -1,0 +1,55 @@
+---
+title: "[Git] 코드 이리저리 옮기기 : Cherry-pick, "
+excerpt: Learn Git Branching 사이트에서 정리
+date: 2019-12-23 10:11:24 +0900
+categories: Git
+tags: git
+last_modified_at: 2019-12-23 10:11:24 +0900
+---
+
+>## Learn Git Branching
+
+git bash를 사용안하다보니 자꾸 까먹게된다.
+좋은 사이트가 재미있게 다시 접근!
+
+[Learn Git Branching](https://learngitbranching.js.org/)
+
+>## Git에서 코드 이리저리 옮기기
+
+### 체리-픽 (Cherry-pick)
+
+```
+$ git cherry-pick <Commit1> <Commit2> <...>
+```
+
+현재 위치(HEAD) 아래에 있는 일련의 커밋들에대한 복사본을 만들겠다는 것을 간단히 줄인 것이다.
+
+
+![](/assets/images/git/191223_01.JPG){: .align-center}
+
+master와 master로 복사하고 싶은 작업이 있는 브랜치 side가 있다. 이것은 rebase를 통해서 할 수 있다. 체리-픽의 수행방법은 아래와 같다.
+
+```
+$ git cherry-pick c2 c4
+```
+
+![](/assets/images/git/191223_02.JPG){: .align-center}
+
+C2와 C4 master 아랫쪽에 작업을 복사했다.
+
+
+### Git 인터렉티브 리베이스(Interactive Rebase)
+
+Git 체리-픽은 여러분이 원하는 커밋이 무엇인지 알때(각각의 해시값도) 아주 유용하다. 하지만 원하는 커밋을 모르는 상황에서는 인터렉티브 리베이스를 사용하면된다.
+
+rebase 명령어를 사용할 때 -i 옵션을 같이 사용한다. 이 옵션을 추가하면, git은 리베이스의 목적지가 되는 곳 아래에 복사될 커밋들을 보여주는 UI를 띄워 각 커밋을 구분할 수 있는 해시들과 메시지도 보여준다.
+
+"실제"git 에서는 vim과 같은 텍스트 편집기에서 파일을 연다.
+
+1. 적용할 커밋들의 순서를 UI를 통해 바꿀수 있다.
+2. 원하지 않는 커밋들을 뺄 수 있습니다. 이것은 pick을 이용해 지정할 수 있다.
+3. 마지막으로, 커밋을 스쿼시(squash)할 수 있습니다. 요약하자면 커밋을 합칠 수 있다.
+
+```
+$ git rebase -i HEAD~4
+```

@@ -1,5 +1,5 @@
 ---
-title: "[Git] 다음 단계로 : HEAD, 상대참조 캐럿(^), 틸트(~), 브랜치 강제 옮기기, 작업되돌리기 reset, revert"
+title: "[Git] 다음 단계로 : HEAD, 상대참조 ^, ~, 브랜치 강제 옮기기, reset, revert"
 excerpt: Learn Git Branching 사이트에서 정리
 date: 2019-12-20 17:16:24 +0900
 categories: Git
