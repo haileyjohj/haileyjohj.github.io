@@ -1,5 +1,5 @@
 ---
-title: "[Git] 코드 이리저리 옮기기 : Cherry-pick, "
+title: "[Git] 코드 이리저리 옮기기 : cherry-pick, rebase"
 excerpt: Learn Git Branching 사이트에서 정리
 date: 2019-12-23 10:11:24 +0900
 categories: Git
