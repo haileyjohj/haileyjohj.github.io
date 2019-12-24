@@ -1,0 +1,56 @@
+---
+title: "[Git]  : rebase -i, cherry-pick, commit --amend, tag, describe"
+excerpt: Learn Git Branching 사이트에서 정리
+date: 2019-12-24 13:45:24 +0900
+categories: Git
+tags: git
+last_modified_at: 2019-12-24 13:45:24 +0900
+---
+
+>## Learn Git Branching
+
+git bash를 사용안하다보니 자꾸 까먹게된다.
+좋은 사이트가 재미있게 다시 접근!
+
+[Learn Git Branching](https://learngitbranching.js.org/)
+
+
+>## 부모를 선택하기
+
+`~` 수식처럼 `^` 수식 또한 뒤에 숫자를 추가 할 수 있다.
+
+몇개의 세대를 돌아갈지 정하는 것 대신(~의 기능) `^`수식은 병합이된 커밋에서 어떤 부모를 참조할지 선택할 수 있다.
+
+병합된 커밋들은 다수의 부모를 가지고 있어서 어떤 부모를 선택할지 예측할 수가 없다. 이럴때 Git은 보통 병합된 커밋에서 `첫부모`를 따라라간다.
+
+
+![](/assets/images/git/191224_01.JPG){: .align-center}
+
+여기 병합된 커밋이 있습니다. 우리가 master를 수식없이 체크아웃한다면 병합된 커밋의 첫 부모를 따라 올라간다.
+
+![](/assets/images/git/191224_02.JPG){: .align-center}
+
+```
+$ git checkout master^
+```
+
+![](/assets/images/git/191224_03.JPG){: .align-center}
+
+```
+$ git checkout master^2
+```
+
+![](/assets/images/git/191224_04.JPG){: .align-center}
+
+
+```
+$ git checkout HEAD~
+$ git checkout HEAD^2
+$ git checkout HEAD~2
+```
+
+한 줄로 표현하면
+
+```
+$ git checkout HEAD~^2~2
+```
