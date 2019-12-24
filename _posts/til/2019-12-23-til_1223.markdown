@@ -1,0 +1,25 @@
+---
+title:  "[TIL] 2019년 12월 23일 월요일"
+date: 2019-12-23 9:40:24
+categories: TIL
+tags: TIL
+last_modified_at: 2019-12-24 10:07:24
+---
+
+>## 오늘 할 일   
+
+- 트리와 그래프 알고리즘 문제풀이 [코딩인터뷰완전분석](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788966263080&orderClick=LAG&Kc=)
+- LC/RC 집에서 정리
+
+
+>## 오늘 한 일   
+
+- 김어준 뉴스공장
+- GIT 공부 [Learn Git Branching](https://learngitbranching.js.org/)
+
+
+>## 내일 할 일  
+
+- Java
+- GIT
+- 알고리즘, 자료구조
