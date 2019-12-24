@@ -81,14 +81,10 @@ $ git describe <ref>
 
 ![](/assets/images/git/191223_04.JPG){: .align-center}
 
-1.
 ```
 $ git describe master
 -> 출력 : v1_2_gC2
 
+$ git describe side
+-> 출력 : v2_1_gC4
 ```
-2.
- ```
- $ git describe side
- -> 출력 : v2_1_gC4
- ```
