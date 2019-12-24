@@ -1,10 +1,10 @@
 ---
-title: "[Git] 종합선물세트 : "
+title: "[Git] 종합선물세트 : rebase -i, cherry-pick, commit --amend, tag, describe"
 excerpt: Learn Git Branching 사이트에서 정리
 date: 2019-12-23 13:11:24 +0900
 categories: Git
 tags: git
-last_modified_at: 2019-12-23 13:11:24 +0900
+last_modified_at: 2019-12-24 10:38:24 +0900
 ---
 
 >## Learn Git Branching
@@ -13,6 +13,7 @@ git bash를 사용안하다보니 자꾸 까먹게된다.
 좋은 사이트가 재미있게 다시 접근!
 
 [Learn Git Branching](https://learngitbranching.js.org/)
+
 
 >## 로컬에 쌓인 커밋들
 
@@ -27,6 +28,7 @@ $ git rebase -i
 ```
 $ git cherry-pick
 ```
+
 
 >## commit --amend 커밋 내용 정정
 
@@ -44,7 +46,7 @@ newImage와 caption 브랜치에 각각의 변경내역이 있고 서로 약간 
 
 이전 강의에서 배웠듯이, 브랜치는 이동하기 쉽다. 작업의 완료, 진행에따라 이리저리 이동하면서 서로다른 커밋을 참조하게 된다. 브랜치는 쉽게 변하며 임시적인 것이다.
 
-이런 상황에서, 중요한 지점들에 영구적으로 표시를 할 방법은 Git 태그 사용하는 것이다. -- Git 태그는 특정 커밋들을 브랜치로 참조하듯이 영구적인 "milestone(이정표)"으로 표시한다.
+이런 상황에서, 중요한 지점들에 영구적으로 표시를 할 방법은 Git 태그 사용하는 것이다. -- Git 태그는 특정 커밋들을 브랜치로 참조하듯이 영구적인 `milestone(이정표)`으로 표시한다.
 
 중요한 점은, Git 태그는 커밋들이 추가적으로 생성되어도 절대 움직이지 않는다는 것이다.
 
@@ -61,7 +63,7 @@ c1 위치에 v1의 이름을 갖는 tag를 붙인다.
 
 커밋 트리에서 태그가 훌륭한 `닻`역할을 하기 때문에, git에는 여러분이 가장 가까운 `태그`에 비해 상대적으로 어디에 위치해있는지 describe(묘사)해주는 명령어가 있다. 이 명령어는 git describe 이다.
 
-Git describe는 커밋 히스토리에서 앞 뒤로 여러 커밋을 이동하고 나서 커밋 트리에서 방향감각을 다시 찾는데 도움을 준다. 이런 상황은 git bisect(문제가 되는 커밋을 찾는 명령어라고 간단히 생각하자)를 하고 나서라던가 휴가를 다녀온 동료의 컴퓨터에 앉는경우가 있다.
+Git describe는 커밋 히스토리에서 앞 뒤로 여러 커밋을 이동하고 나서 커밋 트리에서 방향감각을 다시 찾는데 도움을 준다. 이런 상황은 git bisect(문제가 되는 커밋을 찾는 명령어라고 간단히 생각하자)를 하고 나서라던가 휴가를 다녀온 동료의 컴퓨터에 앉는 경우가 있다.
 
 ```
 $ git describe <ref>
@@ -79,11 +81,13 @@ $ git describe <ref>
 
 ![](/assets/images/git/191223_04.JPG){: .align-center}
 
+1.
 ```
 $ git describe master
 -> 출력 : v1_2_gC2
-```
 
+```
+2.
  ```
  $ git describe side
  -> 출력 : v2_1_gC4
