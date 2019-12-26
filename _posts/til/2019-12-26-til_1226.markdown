@@ -1,0 +1,30 @@
+---
+title:  "[TIL] 2019년 12월 26일 목요일"
+date: 2019-12-26 10:07:24
+categories: TIL
+tags: TIL
+last_modified_at: 2019-12-26 16:37:24
+---
+
+>## 오늘 할 일   
+
+- 싱글톤 디자인패턴 (git tech interview)
+- 알고리즘 (git tech interview)
+- Java (git tech interview)
+- LC/RC 집에서 정리
+
+
+>## 오늘 한 일
+
+- Tech Interview 읽어보기
+- 아웃스탠딩 기사 (세일즈포스)
+
+
+
+>## 느낀 점
+
+-
+
+>## 내일 할 일
+
+-
