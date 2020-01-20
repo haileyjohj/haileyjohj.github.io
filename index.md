@@ -1,5 +1,4 @@
 ---
-<!-- layout: home -->
 author_profile: true
 permanentlink: /_pages/category.md
 ---
