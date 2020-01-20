@@ -1,6 +1,6 @@
 ---
 title: ' * '
-layout: home
+layout: categories
 author_profile: true
 excerpt:
 header:
