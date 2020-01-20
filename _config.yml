@@ -286,15 +286,15 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: pages #posts
     values:
       layout: single
       author_profile: true
       classes: wide
-      read_time: false
-      comments: true
-      share: true
-      related: true
+      # read_time: true
+      # comments: # true
+      # share: true
+      # related: true
       toc_ads: true
       toc_sticky: true
 
