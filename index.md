@@ -1,7 +1,7 @@
 ---
 title: ' , '
-layout: single
-author_profile: false
+layout: home
+author_profile: true
 excerpt:
 header:
   overlay_image: /assets/images/dokdo.jpg
