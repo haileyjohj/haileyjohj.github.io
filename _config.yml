@@ -295,10 +295,11 @@ defaults:
       # comments: # true
       # share: true
       # related: true
-      toc_ads: true
-      toc_sticky: true
+      # toc_ads: true
+      # toc_sticky: true
 
   # _pages
+  pages:
   - scope:
       path: ""
       type: pages
