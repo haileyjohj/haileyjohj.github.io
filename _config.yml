@@ -299,7 +299,6 @@ defaults:
       # toc_sticky: true
 
   # _pages
-  pages:
   - scope:
       path: ""
       type: pages
