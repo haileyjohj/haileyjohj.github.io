@@ -1,6 +1,6 @@
 ---
 title:
-layout: post
+layout: single
 author_profile: true
 excerpt:
 header:
