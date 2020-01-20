@@ -219,7 +219,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:year/:month/:day/
+permalink: /:categories/:year/:month/:day/:title/
 # permalink: /:categories/:year/:month/:day/:title:output_ext
 # permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
