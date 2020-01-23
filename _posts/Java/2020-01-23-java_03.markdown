@@ -1,0 +1,43 @@
+
+---
+title:  "[Java] 두 날짜 차 구하기"
+excerpt: "2020-01-23 10:20:24"
+last_modified_at:   2020-01-23 10:20:24 +0900
+categories: Java
+tags:
+- Java
+---
+
+>## 두 날짜 차이 구하기  
+
+
+```java
+
+public void calDateBetweenAandB() {
+    String date1 = "2019-11-01";
+    String date2 = "2020-01-22";
+
+    try{
+
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd");
+        // 두 날짜를 parse()를 통해 Date형으로 변환.
+        Date FDate = format.parse(date1);
+        Date SDate = format.parse(date2);
+
+        // Date로 변환된 두 날짜를 계산
+        // 리턴값으로 long type 변수를 초기화
+        // 연산결과 -950400000. long type 으로 return
+        long cal = FDate.getTime() - SDate.getTime();
+
+        // Date.getTime() 은 해당날짜를 기준으로1970년 00:00:00 부터 몇 초가 흘렀는지를 반환
+        // 24*60*60*1000(각 시간값 차이) 나눠 일수 출력
+        long calDays = cal / ( 24*60*60*1000);
+
+        calDays = Math.abs(calDays);
+
+        System.out.println("날짜 차이 : " + calDays);
+
+        }catch(ParseException e){ } // 예외 처리
+}    
+
+```
