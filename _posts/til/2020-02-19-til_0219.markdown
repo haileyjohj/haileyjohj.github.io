@@ -1,5 +1,5 @@
 ---
-title:  "[TIL] 2020년 2월 19일 수요일
+title:  "[TIL] 2020년 2월 19일 수요일"
 date: 2020-02-19 20:30:24
 categories: TIL
 tags: TIL
