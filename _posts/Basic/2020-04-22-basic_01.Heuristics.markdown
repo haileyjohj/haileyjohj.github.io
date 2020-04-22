@@ -1,0 +1,33 @@
+---
+title:  "[웹기초] 인터페이스 디자인 유저를 위한 휴리틱스 10가지"
+excerpt: 2020-04-22 22:42:24
+last_modified_at:   2020-04-22 22:42:24 +0900
+categories: Basic
+tags:
+- Heuristics
+---
+
+정리 중! :woman_facepalming:
+
+
+[Jakob Nielsen의 10 Usability Heuristics for User Interface Design](https://www.nngroup.com/articles/ten-usability-heuristics/)    
+
+>### 1. 시스템 상태의 가시성
+
+>### 2. 시스템과 실세계 매칭
+
+>### 3. 사용자의 통제 및 자유 부여
+
+>### 4. 일관성과 평균치
+
+>### 5. 에러 방지
+
+>### 6. 인지와 상기
+
+>### 7. 사용의 유연성과 효율성
+
+>### 8. 본질적이고 미니멀한 디자인
+
+>### 9. 유저가 에러를 인지, 진단, 해결할 수 있도록 돕기
+
+>### 10. FAQ의 접근
