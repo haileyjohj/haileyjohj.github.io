@@ -100,16 +100,16 @@ tags:
 >### Maven 로컬저장소 지정  
 
 ![](/assets/images/set/set_18.JPG){: .align-center}  
-1. 다시 Windows → Preferences → Maven 검색 → User Settings → Maven 설치 경로 conf 폴더 setting.xml 파일 선택  <br>
+1. 다시 Windows → Preferences → Maven 검색 → User Settings → Maven 설치 경로 conf 폴더 setting.xml 파일 선택<br><br>
 ![](/assets/images/set/set_19.JPG){: .align-center}     
 1. Maven 설치경로에 repository 라는 폴더 생성  
-1. 다시 돌아와 open file 버튼 클릭  <br>
+1. 다시 돌아와 open file 버튼 클릭  <br><br>
 ![](/assets/images/set/set_20.JPG){: .align-center}     
 1. setting.xml 파일이 열리고 아래 Source탭을 누릅니다.  
 1. < localRepository > repository 폴더 경로 < /localRepository > 추가  
-1. 이제 Maven이 이클립스에 잘 설정됐는 지 확인하는 방법     <br>
+1. 이제 Maven이 이클립스에 잘 설정됐는 지 확인하는 방법<br><br>
 ![](/assets/images/set/set_21.JPG){: .align-center}     
-1. Windows → Show View → Other → Maven 검색 후 Maven Repositories 선택     <br>
+1. Windows → Show View → Other → Maven 검색 후 Maven Repositories 선택<br><br>
 ![](/assets/images/set/set_22.JPG){: .align-center}      
 1. 이클립스 재실행을 해서 다시 확인    
 
