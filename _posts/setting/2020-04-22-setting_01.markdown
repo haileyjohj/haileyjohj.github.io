@@ -101,27 +101,24 @@ tags:
 
 ![](/assets/images/set/set_18.JPG){: .align-center}  
 1. 다시 Windows → Preferences → Maven 검색 → User Settings → Maven 설치 경로 conf 폴더 setting.xml 파일 선택  
-![](/assets/images/set/set_19.JPG){: .align-center}  
+![](/assets/images/set/set_19.JPG){: .align-center}     
 1. Maven 설치경로에 repository 라는 폴더 생성  
 1. 다시 돌아와 open file 버튼 클릭  
-
-![](/assets/images/set/set_20.JPG){: .align-center}  
+![](/assets/images/set/set_20.JPG){: .align-center}     
 1. setting.xml 파일이 열리고 아래 Source탭을 누릅니다.  
-1. <localRepository> repository 폴더 경로 </localRepository> 추가  
-1. 이제 Maven이 이클립스에 잘 설정됐는 지 확인하는 방법  
-
-![](/assets/images/set/set_21.JPG){: .align-center}  
-1. Windows → Show View → Other → Maven 검색 후 Maven Repositories 선택  
-
-![](/assets/images/set/set_22.JPG){: .align-center}  
-1. 이클립스 재실행을 해서 다시 확인  
+1. < localRepository > repository 폴더 경로 < /localRepository > 추가  
+1. 이제 Maven이 이클립스에 잘 설정됐는 지 확인하는 방법     
+![](/assets/images/set/set_21.JPG){: .align-center}     
+1. Windows → Show View → Other → Maven 검색 후 Maven Repositories 선택     
+![](/assets/images/set/set_22.JPG){: .align-center}      
+1. 이클립스 재실행을 해서 다시 확인    
 
 
 >### Maven target 폴더 제외  
 
 svn 사용 시 target 이라는 폴더까지 같이 커밋되지 않기 위해 하는 설정  
-Maven 사용하여 프로젝트 진행하면 target이라는 폴더가 생기는데 프로젝트 컴파일한 파일이 저장된다.  
-그런데 프로젝트 형상관리 할 때 컴파일된 결과까지 커밋할 필요 없어서 제외  
+Maven 사용하여 프로젝트 진행하면 target이라는 폴더가 생기는데 프로젝트 컴파일한 파일이 저장.  
+프로젝트 형상관리 할 때 컴파일된 결과까지 커밋할 필요 없어서 제외  
 
 
 ![](/assets/images/set/set_23.JPG){: .align-center}  
