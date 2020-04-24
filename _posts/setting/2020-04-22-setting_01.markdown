@@ -1,7 +1,7 @@
 ---
-title:  "스프링(Spring) 개발환경 총 정리 : Eclipse + JDK + Tomcat + Spring"
+title:  "개발환경 설정 총정리 : Eclipse+JDK+Tomcat+Spring"
 excerpt: 2020-04-24 13:46:24
-last_modified_at: 2020-04-24 13:46:24 +0900
+last_modified_at: 2020-04-24 16:03:24 +0900
 categories: Setting
 tags:
 - 설치
@@ -92,13 +92,14 @@ javac
 1. Windows → Preferences → Maven 검색 → Installations → Add  
 ![](/assets/images/set/set_16.JPG){: .align-center}  
 ![](/assets/images/set/set_17.JPG){: .align-center}  
-![](/assets/images/set/set_18.JPG){: .align-center}  
+  
 1. Maven 설치 경로 추가  
 1. 완료  
 
 
 >### Maven 로컬저장소 지정  
 
+![](/assets/images/set/set_18.JPG){: .align-center}  
 1. 다시 Windows → Preferences → Maven 검색 → User Settings → Maven 설치 경로 conf 폴더 setting.xml 파일 선택  
 ![](/assets/images/set/set_19.JPG){: .align-center}  
 1. Maven 설치경로에 repository 라는 폴더 생성  
