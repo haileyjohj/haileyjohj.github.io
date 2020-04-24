@@ -60,13 +60,13 @@ tags:
 ![](/assets/images/set/set_05.JPG){: .align-center}  
 1. Window > Preferences  
 1. Server > Runtime Environment  
-1. Add...  
+1. Add...<br><br>
 ![](/assets/images/set/set_06.JPG){: .align-center}  
-1. Apache tomcat 8.5  
+1. Apache tomcat 8.5<br><br>
 ![](/assets/images/set/set_07.JPG){: .align-center}  
-1. apache-tomcat-8.5 선택  
+1. apache-tomcat-8.5 선택<br><br>
 ![](/assets/images/set/set_08.JPG){: .align-center}  
-1. server tap에서 > No Servers are available. Click this link to create a new serve 클릭  
+1. server tap에서 > No Servers are available. Click this link to create a new serve 클릭<br><br>
 ![](/assets/images/set/set_09.JPG){: .align-center}  
 ![](/assets/images/set/set_10.JPG){: .align-center}  
 ![](/assets/images/set/set_11.JPG){: .align-center}  
@@ -89,10 +89,9 @@ tags:
 >### 이클립스 설정  
 
 ![](/assets/images/set/set_15.JPG){: .align-center}  
-1. Windows → Preferences → Maven 검색 → Installations → Add  
+1. Windows → Preferences → Maven 검색 → Installations → Add<br><br>
 ![](/assets/images/set/set_16.JPG){: .align-center}  
 ![](/assets/images/set/set_17.JPG){: .align-center}  
-
 1. Maven 설치 경로 추가  
 1. 완료  
 
