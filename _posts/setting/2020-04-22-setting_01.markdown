@@ -61,73 +61,75 @@ javac
 1. Window > Preferences  
 1. Server > Runtime Environment  
 1. Add...  
-
 ![](/assets/images/set/set_06.JPG){: .align-center}  
 1. Apache tomcat 8.5  
-
 ![](/assets/images/set/set_07.JPG){: .align-center}  
 1. apache-tomcat-8.5 선택  
-
 ![](/assets/images/set/set_08.JPG){: .align-center}  
 1. server tap에서 > No Servers are available. Click this link to create a new serve 클릭  
-
 ![](/assets/images/set/set_09.JPG){: .align-center}  
 ![](/assets/images/set/set_10.JPG){: .align-center}  
 ![](/assets/images/set/set_11.JPG){: .align-center}  
 1. 서버 선택하고 Ctrl + Alt + R 눌러 실행하고 확인  
-  
+
 
 >## Maven 환경변수 설정  
 
-![](/assets/images/set/set_13.JPG){: .align-center}
-1. 변수 이름 : MAVEN_HOME / 변수 값 : Maven 설치 경로
-1. Path 환경변수 편집 누르고 새로 만들기해서 %MAVEN_HOME%\bin
+>### 설정  
 
-![](/assets/images/set/set_14.JPG){: .align-center}
-1. CMD에서 Maven 버전 확인 명령어(mvn -version)를 실행하여 제대로 설치됐는지 확인
-1. 이클립스에서 설정
-1. Windows → Preferences → Maven 검색 → Installations → Add
-1. Maven 설치 경로 추가
-1. 완료
+![](/assets/images/set/set_13.JPG){: .align-center}  
+1. 변수 이름 : MAVEN_HOME / 변수 값 : Maven 설치 경로  
+1. Path 환경변수 편집 누르고 새로 만들기해서 %MAVEN_HOME%\bin  
 
-![](/assets/images/set/set_15.JPG){: .align-center}
-![](/assets/images/set/set_16.JPG){: .align-center}
-![](/assets/images/set/set_17.JPG){: .align-center}
-![](/assets/images/set/set_18.JPG){: .align-center}
+>### 확인  
 
+![](/assets/images/set/set_14.JPG){: .align-center}  
+1. CMD에서 Maven 버전 확인 명령어(mvn -version)를 실행  
 
-1. Maven 로컬저장소 지정
-1. 다시 Windows → Preferences → Maven 검색 → User Settings → Maven 설치 경로 conf 폴더 setting.xml 파일 선택
+>### 이클립스 설정  
 
-![](/assets/images/set/set_19.JPG){: .align-center}
-1. Maven 설치경로에 repository 라는 폴더 생성
-1. 다시 돌아와 open file 버튼 클릭
-
-![](/assets/images/set/set_20.JPG){: .align-center}
+![](/assets/images/set/set_15.JPG){: .align-center}  
+1. Windows → Preferences → Maven 검색 → Installations → Add  
+![](/assets/images/set/set_16.JPG){: .align-center}  
+![](/assets/images/set/set_17.JPG){: .align-center}  
+![](/assets/images/set/set_18.JPG){: .align-center}  
+1. Maven 설치 경로 추가  
+1. 완료  
 
 
-1. setting.xml 파일이 열리고 아래 Source탭을 누릅니다.
-1. <localRepository> repository 폴더 경로 </localRepository> 추가
-1. 이제 Maven이 이클립스에 잘 설정됐는 지 확인하는 방법
+>### Maven 로컬저장소 지정  
 
-![](/assets/images/set/set_21.JPG){: .align-center}
-1. Windows → Show View → Other → Maven 검색 후 Maven Repositories 선택
+1. 다시 Windows → Preferences → Maven 검색 → User Settings → Maven 설치 경로 conf 폴더 setting.xml 파일 선택  
+![](/assets/images/set/set_19.JPG){: .align-center}  
+1. Maven 설치경로에 repository 라는 폴더 생성  
+1. 다시 돌아와 open file 버튼 클릭  
 
-![](/assets/images/set/set_22.JPG){: .align-center}
-1. 이클립스 재실행을 해서 다시 확인
+![](/assets/images/set/set_20.JPG){: .align-center}  
+1. setting.xml 파일이 열리고 아래 Source탭을 누릅니다.  
+1. <localRepository> repository 폴더 경로 </localRepository> 추가  
+1. 이제 Maven이 이클립스에 잘 설정됐는 지 확인하는 방법  
 
+![](/assets/images/set/set_21.JPG){: .align-center}  
+1. Windows → Show View → Other → Maven 검색 후 Maven Repositories 선택  
 
-Maven target 폴더 제외
-svn 사용 시 target 이라는 폴더까지 같이 커밋되지 않기 위해 하는 설정으로, Maven 사용하여 프로젝트 진행하면 target이라는 폴더가 생기는데 프로젝트 컴파일한 파일이 저장된다고 합니다. 그런데 프로젝트 형상관리 할 때 컴파일된 결과까지 커밋할 필요 없고 개발소스만 관리되면 되므로 target 폴더를 제외하고자 하는 것입니다.
-
-![](/assets/images/set/set_23.JPG){: .align-center}
-![](/assets/images/set/set_24.JPG){: .align-center}
-1. Windows → Preferences → team 검색 → Add Pattern → */target/* 추가
-2. 완료
-
-
-Market Place 에서 추가 설치 할 것
-STS Spring
+![](/assets/images/set/set_22.JPG){: .align-center}  
+1. 이클립스 재실행을 해서 다시 확인  
 
 
-https://addio3305.tistory.com/36?category=772645 참고
+>### Maven target 폴더 제외  
+
+svn 사용 시 target 이라는 폴더까지 같이 커밋되지 않기 위해 하는 설정  
+Maven 사용하여 프로젝트 진행하면 target이라는 폴더가 생기는데 프로젝트 컴파일한 파일이 저장된다.  
+그런데 프로젝트 형상관리 할 때 컴파일된 결과까지 커밋할 필요 없어서 제외  
+
+
+![](/assets/images/set/set_23.JPG){: .align-center}  
+![](/assets/images/set/set_24.JPG){: .align-center}  
+1. Windows → Preferences → team 검색 → Add Pattern → */target/* 추가  
+2. 완료  
+
+
+>## Market Place 에서 추가 설치 할 것
+
+STS Spring  
+[참고 사이트 : https://addio3305.tistory.com/36?category=772645](https://addio3305.tistory.com/36?category=772645)
