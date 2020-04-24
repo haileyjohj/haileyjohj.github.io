@@ -23,7 +23,6 @@ tags:
 
 
 2. Eclipse
-
   https://www.eclipse.org/downloads/
 
   Java EE 버전 다운로드
@@ -31,13 +30,10 @@ tags:
 
 
 3. Tomcat
-
   http://tomcat.apache.org/
 
 4. Maven
-
   http://maven.apache.org/
-
 
 다운로드 한 버전 : JDK 1.8.0_201
 
