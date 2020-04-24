@@ -17,27 +17,26 @@ tags:
 
 1. JDK
 
-[최신버전 : https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)
+  [최신버전 : https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)
 
-[이전버전 : https://www.oracle.com/java/technologies/oracle-java-archive-downloads.html](https://www.oracle.com/java/technologies/oracle-java-archive-downloads.html)
-
-
-1. Eclipse
-
-https://www.eclipse.org/downloads/
-
-Java EE 버전 다운로드
-
-개인적으로 직접 설치를 좋아하지 않아서 zip 파일로 다운로드했다
+  [이전버전 : https://www.oracle.com/java/technologies/oracle-java-archive-downloads.html](https://www.oracle.com/java/technologies/oracle-java-archive-downloads.html)
 
 
-1. Tomcat
+2. Eclipse
 
-http://tomcat.apache.org/
+  https://www.eclipse.org/downloads/
 
-1. Maven
+  Java EE 버전 다운로드
+  직접 설치를 좋아하지 않아서 zip 파일로 다운로드했다
 
-http://maven.apache.org/
+
+3. Tomcat
+
+  http://tomcat.apache.org/
+
+4. Maven
+
+  http://maven.apache.org/
 
 
 다운로드 한 버전 : JDK 1.8.0_201
