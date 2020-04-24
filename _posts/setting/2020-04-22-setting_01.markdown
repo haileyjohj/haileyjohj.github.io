@@ -127,7 +127,11 @@ Maven 사용하여 프로젝트 진행하면 target이라는 폴더가 생기는
 2. 완료  
 
 
->## Market Place 에서 추가 설치 할 것
+>## Market Place 에서 추가 설치 할 것  
 
+마켓에서 검색해서 Spring 설치  
 STS Spring  
+
+추가 스프링 프로젝트 설정은 아래 글 참고  
+  
 [참고 사이트 : https://addio3305.tistory.com/36?category=772645](https://addio3305.tistory.com/36?category=772645)
