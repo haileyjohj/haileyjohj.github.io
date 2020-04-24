@@ -61,12 +61,16 @@ javac
 1. Window > Preferences  
 1. Server > Runtime Environment  
 1. Add...  
+
 ![](/assets/images/set/set_06.JPG){: .align-center}  
 1. Apache tomcat 8.5  
+
 ![](/assets/images/set/set_07.JPG){: .align-center}  
 1. apache-tomcat-8.5 선택  
+
 ![](/assets/images/set/set_08.JPG){: .align-center}  
-1. server tap에서 > No Servers are available. Click this link to create a new serve 클릭  
+1. server tap에서 > No Servers are available. Click this link to create a new serve 클릭
+ 
 ![](/assets/images/set/set_09.JPG){: .align-center}  
 ![](/assets/images/set/set_10.JPG){: .align-center}  
 ![](/assets/images/set/set_11.JPG){: .align-center}  
