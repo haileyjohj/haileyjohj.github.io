@@ -1,0 +1,99 @@
+---
+title:  "스프링(Spring) 개발환경 총 정리 : Eclipse + JDK + Tomcat + Spring"
+excerpt: 2020-04-24 13:46:24
+last_modified_at: 2020-04-24 13:46:24 +0900
+categories: Setting
+tags:
+- 설치
+---
+
+>## 개발환경 설정
+
+새로운 PC에 개발환경을 새롭게 설치하고 정리하려니 기억이 가물가물한다. 이왕 설치하는거 하나하나 기록하면서 나중에 또 이런일이 있으면 체크리스트로 삼으려고 남겨둔다.
+
+
+>## 다운로드
+
+1. JDK
+[최신버전 : https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)
+[이전버전 : https://www.oracle.com/java/technologies/oracle-java-archive-downloads.html](https://www.oracle.com/java/technologies/oracle-java-archive-downloads.html)
+
+1. Eclipse
+https://www.eclipse.org/downloads/
+
+Java EE 버전 다운로드
+개인적으로 직접 설치를 좋아하지 않아서 zip 파일로 다운로드했다
+
+
+1. Tomcat
+http://tomcat.apache.org/
+
+
+1. Maven
+http://maven.apache.org/
+
+다운로드 한 버전 : JDK 1.8.0_201
+
+
+>## JDK 환경변수 설정
+
+
+제어판\시스템 및 보안\시스템
+고급 시스템 설정 > 환경변수 > 시스템 변수 새로 만들기
+
+Path에 JDK 경로 추가
+C:\Program Files\Java\jdk1.8.0_201\bin
+
+환경변수 확인
+실행(윈도우키+R) > cmd
+
+![](/assets/images/set/set_02.JPG){: .align-center}
+java
+
+javac
+
+
+>## Tomcat 설정
+
+1. Window > Preferences
+1. Server > Runtime Environment
+1. Add...
+1. Apache tomcat 8.5
+1. apache-tomcat-8 선택
+1. server tap에서 > No Servers are available. Click this link to create a new serve 클릭
+1. 서버 선택하고 Ctrl + Alt + R 눌러 실행하고 확인
+
+>## Maven 환경변수 설정
+
+1. 변수 이름 : MAVEN_HOME / 변수 값 : Maven 설치 경로
+1. Path 환경변수 편집 누르고 새로 만들기해서 %MAVEN_HOME%\bin
+1. CMD에서 Maven 버전 확인 명령어(mvn -version)를 실행하여 제대로 설치됐는지 확인
+1. 이클립스에서 설정
+1. Windows → Preferences → Maven 검색 → Installations → Add
+1. Maven 설치 경로 추가
+1. 완료
+
+
+1. Maven 로컬저장소 지정
+1. 다시 Windows → Preferences → Maven 검색 → User Settings → Maven 설치 경로 conf 폴더 setting.xml 파일 선택
+1. Maven 설치경로에 repository 라는 폴더 생성
+1. 다시 돌아와 open file 버튼 클릭
+1. setting.xml 파일이 열리고 아래 Source탭을 누릅니다.
+1. <localRepository> repository 폴더 경로 </localRepository> 추가
+1. 이제 Maven이 이클립스에 잘 설정됐는 지 확인하는 방법
+1. Windows → Show View → Other → Maven 검색 후 Maven Repositories 선택
+1. 이클립스 재실행을 해서 다시 확인
+
+
+Maven target 폴더 제외
+svn 사용 시 target 이라는 폴더까지 같이 커밋되지 않기 위해 하는 설정으로, Maven 사용하여 프로젝트 진행하면 target이라는 폴더가 생기는데 프로젝트 컴파일한 파일이 저장된다고 합니다. 그런데 프로젝트 형상관리 할 때 컴파일된 결과까지 커밋할 필요 없고 개발소스만 관리되면 되므로 target 폴더를 제외하고자 하는 것입니다.
+
+1. Windows → Preferences → team 검색 → Add Pattern → */target/* 추가
+2. 완료
+
+
+Market Place 에서 추가 설치 할 것
+STS Spring
+
+
+https://addio3305.tistory.com/36?category=772645 참고
