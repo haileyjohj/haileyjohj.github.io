@@ -123,7 +123,7 @@ Maven 사용하여 프로젝트 진행하면 target이라는 폴더가 생기는
 
 ![](/assets/images/set/set_23.JPG){: .align-center}  
 ![](/assets/images/set/set_24.JPG){: .align-center}  
-1. Windows → Preferences → team 검색 → Add Pattern → */target/* 추가  
+1. Windows → Preferences → team 검색 → Add Pattern → * /target/ * 추가  
 2. 완료  
 
 
