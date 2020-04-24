@@ -18,6 +18,7 @@ tags:
 1. JDK  
   [최신버전 : https://www.oracle.com/java/technologies/javase-downloads.html](https://www.oracle.com/java/technologies/javase-downloads.html)  
   [이전버전 : https://www.oracle.com/java/technologies/oracle-java-archive-downloads.html](https://www.oracle.com/java/technologies/oracle-java-archive-downloads.html)  
+  다운로드 한 버전 : JDK 1.8.0_201  
 
 1. Eclipse  
   [https://www.eclipse.org/downloads/](https://www.eclipse.org/downloads/)  
@@ -29,29 +30,28 @@ tags:
 
 1. Maven  
   [http://maven.apache.org/](http://maven.apache.org/)  
-  다운로드 한 버전 : JDK 1.8.0_201  
 
 
 >## JDK 환경변수 설정
 
 ![](/assets/images/set/set_12.JPG){: .align-center}
 
-제어판\시스템 및 보안\시스템  
-고급 시스템 설정 > 환경변수 > 시스템 변수 새로 만들기
+  제어판\시스템 및 보안\시스템  
+  고급 시스템 설정 > 환경변수 > 시스템 변수 새로 만들기
 
-Path에 JDK 경로 추가  
-C:\Program Files\Java\jdk1.8.0_201\bin  
+  Path에 JDK 경로 추가  
+  C:\Program Files\Java\jdk1.8.0_201\bin  
 
 
 >## 환경변수 확인  
 
-실행(윈도우키+R) > cmd  
+  실행(윈도우키+R) > cmd  
 
 ![](/assets/images/set/set_02.JPG){: .align-center}  
-java  
+  java  
 
 ![](/assets/images/set/set_03.JPG){: .align-center}  
-javac  
+  javac  
 
 
 >## Tomcat 설정  
@@ -92,7 +92,7 @@ javac
 1. Windows → Preferences → Maven 검색 → Installations → Add  
 ![](/assets/images/set/set_16.JPG){: .align-center}  
 ![](/assets/images/set/set_17.JPG){: .align-center}  
-  
+
 1. Maven 설치 경로 추가  
 1. 완료  
 
