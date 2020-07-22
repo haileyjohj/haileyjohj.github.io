@@ -1,0 +1,71 @@
+---
+title:  "[알고리즘] 순환(Recursion)"
+excerpt: "2020-07-22 20:40:24"
+last_modified_at:  2020-07-22 20:40:24 +0900
+categories: Algorithm
+tags:
+- Algorithm
+---
+
+># 순환(Recursion)  
+
+
+
+>### 0에서 n까지 합
+
+```Java
+public class Test {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int result = func(4);
+		System.out.println("0에서 n까지의 합 : " + result);
+
+	}
+
+	public static int func (int n) {
+		if(n==0) {
+			return 0;
+		}else {
+			return n + func(n-1);
+		}
+	}
+}
+```
+  
+```
+0에서 n까지의 합 : 10
+```
+
+>## Factorial n!
+
+0 != 1
+n != n*(n-1)! n>0
+
+```Java
+public class Test {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int result = factorial(4);
+		System.out.println("4! = " + result);
+
+	}
+
+	public static int factorial (int n) {
+		if(n==0) {
+			return 1;
+		}else {
+			int print = n * factorial(n-1);
+			System.out.println(n + " , " + print);
+			return print;
+		}
+	}
+}
+```
+
+```
+1 , 1
+2 , 2
+3 , 6
+4 , 24
+4! = 24
+```
