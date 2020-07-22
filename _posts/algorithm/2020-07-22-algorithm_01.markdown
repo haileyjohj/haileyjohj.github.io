@@ -16,10 +16,8 @@ tags:
 ```java   
 public class Test {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int result = func(4);
 		System.out.println("0에서 n까지의 합 : " + result);
-
 	}
 
 	public static int func (int n) {
@@ -38,16 +36,14 @@ public class Test {
 
 >## Factorial n!
 
-0 != 1
+0 != 1  
 n != n*(n-1)! n>0
 
 ```java   
 public class Test {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int result = factorial(4);
 		System.out.println("4! = " + result);
-
 	}
 
 	public static int factorial (int n) {
@@ -72,14 +68,13 @@ public class Test {
 
 >### xⁿ
 
-x^0 = 1
+x^0 = 1  
 xⁿ = x*xⁿ-¹ if n>0
 
 ```java
 
 public class Test {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		double result = power(2, 6);
 		System.out.println("2^6 = " + result);
 
@@ -106,4 +101,49 @@ public class Test {
 5 , 32.0
 6 , 64.0
 2^6 = 64.0
+```
+
+>### Fibonacci Number  
+
+피보나치는 수열 종류 중 하나
+
+1 1 2 3 5 8 13 21 34....  
+
+앞에 있는 숫자와 그 앞에 있는 숫자와 더한 것을 나열하는 것.  
+
+1+1 = 2  
+2+3 = 5  
+3+5 = 8  
+5+8 = 13  
+
+f0 = 0  
+f₁ = 1  
+fn = fn-₁ + fn-₂ n>1  
+
+```java
+public class Test {
+	public static void main(String[] args) {
+		int input = 6; //6번째
+		for(int i=1; i<=input; i++) {
+			System.out.println(fibonacci(i));
+		}
+	}
+
+	public static int fibonacci (int n) {
+		if(n<2) {
+			return n;
+		}else {
+			return fibonacci(n-1) + fibonacci(n-2);
+		}
+	}
+}
+```
+
+```
+1
+1
+2
+3
+5
+8
 ```
