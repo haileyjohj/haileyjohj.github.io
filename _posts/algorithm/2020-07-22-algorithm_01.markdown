@@ -148,7 +148,7 @@ public class Test {
 8
 ```
 
->###   최대공약수 : Euclid Method  
+>### 최대공약수 : Euclid Method  
 
 ```java
 public class Test {
@@ -177,5 +177,32 @@ public class Test {
 
 ```
 9, 3
+최대공약수 : 3
+```
+
+>### 최대공약수 : Euclid Method 간단 버전  
+
+```java
+//최대공약수 : Euclid Method 간단 버전
+public class Test {
+	public static void main(String[] args) {
+		System.out.println("최대공약수 : "+gcd(9,12));
+	}
+
+	public static int gcd (int m, int n) {
+		if(n==0) {
+			return m;
+		}else {
+			System.out.printf("%d, %d %n" , n, m%n);
+			return gcd(n , m%n);
+		}
+	}
+}
+```
+
+```
+12, 9
+9, 3
+3, 0
 최대공약수 : 3
 ```
