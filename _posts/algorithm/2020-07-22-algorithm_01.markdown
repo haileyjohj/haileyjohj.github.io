@@ -1,5 +1,5 @@
 ---
-title:  "[알고리즘] 순환(Recursion)"
+title:  "[알고리즘] 순환(Recursion) 01"
 excerpt: "2020-07-22 20:40:24"
 last_modified_at:  2020-07-22 20:40:24 +0900
 categories: Algorithm
@@ -9,6 +9,8 @@ tags:
 
 ># 순환(Recursion)  
 
+인프론 강의를 보면서 연습하고 기록하고 있습니다  
+  
 
 
 >### 0에서 n까지 합
@@ -34,7 +36,7 @@ public class Test {
 0에서 n까지의 합 : 10
 ```
 
->## Factorial n!
+>### Factorial n!
 
 0 != 1  
 n != n*(n-1)! n>0
