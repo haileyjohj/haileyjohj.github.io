@@ -1,7 +1,7 @@
 ---
 title:  "[알고리즘] 순환(Recursion) 06 - N-Queens"
 excerpt: "2020-07-27 22:42:24"
-last_modified_at:  2020-07-27 22:42:24 +0900
+last_modified_at:  2020-07-27 23:20:24 +0900
 categories: Algorithm
 tags:
 - Algorithm
@@ -49,18 +49,19 @@ boolean queens (int level) {
 
 	//성공
 	}else if(level == N) {
-		//실제 말의 위치 출력
+		//실제 말이 위치 출력
 		for(int i=1; i<=N; i++) {
 			System.out.println("(" +i+", " + cols[i] + ")");
 		}
 		return true;
-	}
 
 	//현재 레벌의 아랫쪽 레벨 검사 level+1;
-	for(int i=1; i<=N; i++) {
-		cols[level+1] = i;
-		if(queens(level+1)) {
-			return true;
+	}else {
+		for(int i=1; i<=N; i++) {
+			cols[level+1] = i;
+			if(queens(level+1)) {
+				return true;
+			}
 		}
 	}
 	return false;
