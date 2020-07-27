@@ -1,0 +1,90 @@
+---
+title:  "[알고리즘] 순환(Recursion) 06 - N-Queens"
+excerpt: "2020-07-27 22:42:24"
+last_modified_at:  2020-07-27 22:42:24 +0900
+categories: Algorithm
+tags:
+- Algorithm
+---
+
+># 순환(Recursion) 응용편 : N-Queens  
+
+인프론 강의를 보면서 연습하고 기록하고 있습니다  
+
+상태공간트리 : 찾는 해를 포함하는 트리  
+해가 존재한다면 그것은 반드시 ㅣ 트리의 한 노드에 해당함  
+따라서 이 트리를 체계적으로 탐색하면 해를 구할 수 있음  
+
+되추적 기법(Backtracking)  
+상태공간 트리를 깊이 우선 방식으로 탐색하여 해를 찾는 알고리즘  
+
+>### 의사코드  
+
+```   
+return-type queens(arguments){
+	if(non-promising){
+		report failure and return;
+	}else if success{
+		report answer and return;
+	}else{
+		visit children recursively;
+	}
+}
+```
+
+>### Java코드  
+
+```java   
+private static int N = 8; //범위
+int[] cols = new int[N+1];
+
+public static void main(String[] args) {
+	queens(0);
+}
+
+boolean queens (int level) {
+	//같은 열, 혹은 대각선에 위치해있어서 꽝
+	if(!promising(level)) {
+		return false;
+
+	//성공
+	}else if(level == N) {
+		//실제 말의 위치 출력
+		for(int i=1; i<=N; i++) {
+			System.out.println("(" +i+", " + cols[i] + ")");
+		}
+		return true;
+	}
+
+	//현재 레벌의 아랫쪽 레벨 검사 level+1;
+	for(int i=1; i<=N; i++) {
+		cols[level+1] = i;
+		if(queens(level+1)) {
+			return true;
+		}
+	}
+	return false;
+}
+
+boolean promising(int level) {
+	for(int i=1; i<level; i++) {
+		if(cols[i] == cols[level]) { //같은 열에 놓였는지 검사
+			return false;
+		}else if(level-i == Math.abs(cols[level]-cols[i])) { //대각선에 놓여있는지 검사
+			return false;
+		}
+	}
+	return true;
+}
+```
+
+```
+(1, 1)
+(2, 5)
+(3, 8)
+(4, 6)
+(5, 3)
+(6, 7)
+(7, 2)
+(8, 4)
+```
