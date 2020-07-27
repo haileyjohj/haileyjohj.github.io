@@ -1,7 +1,7 @@
 ---
-title:  "[알고리즘] 순환(Recursion) 04 - 미로찾기"
+title:  "[알고리즘] 순환(Recursion) 05 - Counting Cells in a Blob "
 excerpt: "2020-07-27 21:45:24"
-last_modified_at:  2020-07-27 21:45:24 +0900
+last_modified_at:  2020-07-27 22:42:24 +0900
 categories: Algorithm
 tags:
 - Algorithm
