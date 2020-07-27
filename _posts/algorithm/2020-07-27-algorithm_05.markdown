@@ -1,0 +1,103 @@
+---
+title:  "[알고리즘] 순환(Recursion) 04 - 미로찾기"
+excerpt: "2020-07-27 21:45:24"
+last_modified_at:  2020-07-27 21:45:24 +0900
+categories: Algorithm
+tags:
+- Algorithm
+---
+
+># 순환(Recursion) 응용편 : Counting Cells in a Blob  
+
+인프론 강의를 보면서 연습하고 기록하고 있습니다  
+
+>### 의사코드  
+
+```   
+Algorithm for countCells(x, y) {
+	if the pixel(x, y) is outside the grid
+		the result is 0;
+	else if pixel(x, y) is not an image picel or already counted
+		the result is 0;
+	else
+		set the colour of the pixel(x, y) to a red colour;
+		the result is 1 plus the nuber of cells in each piece of
+			the blob that includes a nearest neighbour;
+}
+```
+
+>### Java코드
+
+```java   
+private static int N = 8; //범위
+private static int[][] grid = {
+		{1, 0, 0, 0, 0, 0, 0, 1},
+		{0, 1, 1, 0, 0, 1, 0, 0},
+		{1, 1, 0, 0, 1, 0, 1, 0},
+		{0, 0, 0, 0, 0, 1, 0, 0},
+		{0, 1, 0, 1, 0, 1, 0, 0},
+		{0, 1, 0, 1, 0, 1, 0, 0},
+		{1, 0, 0, 0, 1, 0, 0, 1},
+		{0, 1, 1, 0, 0, 1, 1, 1}
+};
+
+private static final int BACKGROUND = 0;
+private static final int IMAGE = 1;
+private static final int ALREADY_COUNTED = 2;
+
+public static void main(String[] args) {
+	printImage();
+	System.out.println("blob size : "+countCells(3,5));
+	printImage();
+}
+
+public static int countCells (int x, int y) {
+	if (x<0 || y<0 || x>=N || y>=N) { //범위 넘어갔는지 체크
+		return 0;
+	}else if(grid[x][y] != IMAGE){ //이미지 컬러가 아닐 때
+		return 0;
+	}else {
+		grid[x][y] = ALREADY_COUNTED;
+		return 1
+				+ countCells(x-1, y) + countCells(x-1, y+1)
+				+ countCells(x, y+1) + countCells(x+1, y+1)
+				+ countCells(x+1, y) + countCells(x+1, y-1)
+				+ countCells(x, y-1) + countCells(x-1, y-1);
+	}
+}
+
+public static void printImage() {
+	System.out.println("---------------------------------");
+	for (int i = 0; i < grid.length; i++) {
+		for (int j = 0; j < grid.length; j++) {
+			System.out.print(grid[i][j] +" ");
+		}
+		System.out.println();
+	}
+	System.out.println("---------------------------------");
+}
+```
+
+```
+---------------------------------
+1 0 0 0 0 0 0 1
+0 1 1 0 0 1 0 0
+1 1 0 0 1 0 1 0
+0 0 0 0 0 1 0 0
+0 1 0 1 0 1 0 0
+0 1 0 1 0 1 0 0
+1 0 0 0 1 0 0 1
+0 1 1 0 0 1 1 1
+---------------------------------
+blob size : 13
+---------------------------------
+1 0 0 0 0 0 0 1
+0 1 1 0 0 2 0 0
+1 1 0 0 2 0 2 0
+0 0 0 0 0 2 0 0
+0 1 0 2 0 2 0 0
+0 1 0 2 0 2 0 0
+1 0 0 0 2 0 0 2
+0 1 1 0 0 2 2 2
+---------------------------------
+```
