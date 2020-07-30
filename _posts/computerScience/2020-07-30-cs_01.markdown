@@ -2,7 +2,7 @@
 title:  "[컴퓨터공학] 운영체제 역사 간략 정리"
 excerpt: "2020-07-30 12:21:24"
 last_modified_at:  2020-07-30 12:21:24 +0900
-categories: computer science
+categories: computerScience
 tags:
 - computerScience
 ---
