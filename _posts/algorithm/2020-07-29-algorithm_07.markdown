@@ -1,7 +1,7 @@
 ---
-title:  "[알고리즘] 순환(Recursion) 07 - 멱집합"
+title:  "[알고리즘] 순환(Recursion) 07 - 멱집합(상태공간트리)"
 excerpt: "2020-07-29 21:21:24"
-last_modified_at:  2020-07-31 22:23:24 +0900
+last_modified_at:  2020-07-31 22:38:24 +0900
 categories: Algorithm
 tags:
 - Algorithm
@@ -32,6 +32,7 @@ powerSet(P, S){ //S의 멱집합을 구한 후 각각의 집합 P를 합집합�
 ```java   
 private static char data[] = {'a', 'b', 'c', 'd', 'e', 'f'};
 private static int n = data.length;
+//int k와 함께 트리상에서 현재 나의 위치를 표현
 private static boolean[] include = new boolean[n];
 
 public static void main(String[] args) {
@@ -61,6 +62,7 @@ public static void powerSet (int k) {
 ```
 
 ```
+
 f
 e
 e f
@@ -123,5 +125,5 @@ a b c e f
 a b c d
 a b c d f
 a b c d e
-a b c d e f 
+a b c d e f
 ```
