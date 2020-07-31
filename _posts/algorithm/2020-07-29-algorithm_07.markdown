@@ -30,57 +30,98 @@ powerSet(P, S){ //S의 멱집합을 구한 후 각각의 집합 P를 합집합�
 >### Java코드  
 
 ```java   
-private static int N = 8; //범위
-int[] cols = new int[N+1];
+private static char data[] = {'a', 'b', 'c', 'd', 'e', 'f'};
+private static int n = data.length;
+private static boolean[] include = new boolean[n];
 
 public static void main(String[] args) {
-	queens(0);
+	powerSet(0);
 }
 
-boolean queens (int level) {
-	//같은 열, 혹은 대각선에 위치해있어서 꽝
-	if(!promising(level)) {
-		return false;
-
-	//성공
-	}else if(level == N) {
-		//실제 말이 위치 출력
-		for(int i=1; i<=N; i++) {
-			System.out.println("(" +i+", " + cols[i] + ")");
-		}
-		return true;
-
-	//현재 레벌의 아랫쪽 레벨 검사 level+1;
-	}else {
-		for(int i=1; i<=N; i++) {
-			cols[level+1] = i;
-			if(queens(level+1)) {
-				return true;
+public static void powerSet (int k) {
+	//집합이 공집합
+	if(k==n) {
+		for(int i=0; i<n; i++) {
+			if(include[i]) {
+				System.out.print(data[i] + " ");
 			}
 		}
+		System.out.println();
+		return;
 	}
-	return false;
-}
 
-boolean promising(int level) {
-	for(int i=1; i<level; i++) {
-		if(cols[i] == cols[level]) { //같은 열에 놓였는지 검사
-			return false;
-		}else if(level-i == Math.abs(cols[level]-cols[i])) { //대각선에 놓여있는지 검사
-			return false;
-		}
-	}
-	return true;
+	//data[k]를 포함하지 않는 경우
+	include[k] = false;
+	powerSet(k+1);
+
+	//data[k]를 포함하는 경우
+	include[k] = true;
+	powerSet(k+1);
 }
 ```
 
 ```
-(1, 1)
-(2, 5)
-(3, 8)
-(4, 6)
-(5, 3)
-(6, 7)
-(7, 2)
-(8, 4)
+f
+e
+e f
+d
+d f
+d e
+d e f
+c
+c f
+c e
+c e f
+c d
+c d f
+c d e
+c d e f
+b
+b f
+b e
+b e f
+b d
+b d f
+b d e
+b d e f
+b c
+b c f
+b c e
+b c e f
+b c d
+b c d f
+b c d e
+b c d e f
+a
+a f
+a e
+a e f
+a d
+a d f
+a d e
+a d e f
+a c
+a c f
+a c e
+a c e f
+a c d
+a c d f
+a c d e
+a c d e f
+a b
+a b f
+a b e
+a b e f
+a b d
+a b d f
+a b d e
+a b d e f
+a b c
+a b c f
+a b c e
+a b c e f
+a b c d
+a b c d f
+a b c d e
+a b c d e f 
 ```
