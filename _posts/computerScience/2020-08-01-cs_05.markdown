@@ -1,0 +1,18 @@
+---
+title:  "[컴퓨터공학] 운영체제 구조 - 선점형과 비선점형 스케줄러"
+excerpt: "2020-08-01 13:26:24"
+last_modified_at:  2020-08-01 13:26:24 +0900
+categories: computerScience
+tags:
+- computerScience
+---
+
+># 운영체제 구조 - 선점형과 비선점형 스케줄러  
+
+패스트캠퍼스 강의 보면서 정리하고 있습니다  
+
+
+>### 선점형, 비선점형  
+
+- 선점형 스케줄러(Preemptive Scheduling) : 하나의 프로세스가 다른 프로세스 대신에 프로세서(CPU)를 차지할수 있음  
+- 비선점형 스케줄러(Non-preemptive Scheduling) : 하나의 프로세스가 끝나지 않으면 다른 프로세스는 CPU를 사용할 수 없음  
