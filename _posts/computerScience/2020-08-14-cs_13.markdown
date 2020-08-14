@@ -106,7 +106,6 @@ chomod u=rwx,g=rw,o=rx test.
       r = 2^2  
       w = 2^1  
       x = 2^0  
-
     ```
     rwxrwxrwx = 777
     r-xr-xr-x = 555
@@ -125,7 +124,6 @@ chomod u=rwx,g=rw,o=rx test.
 
 - chown : 소유자 변경  
   - chown [옵션][소유자:소유그룹][파일]  
-
   ```
   chown root:root file
   chown root: file
