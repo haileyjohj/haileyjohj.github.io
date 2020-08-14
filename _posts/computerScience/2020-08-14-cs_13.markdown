@@ -1,5 +1,5 @@
 ---
-title:  "[컴퓨터공학] 시스템 프로그래밍"
+title:  "[컴퓨터공학] 시스템 프로그래밍 - 리눅스 기본 명령어 정리"
 excerpt: "2020-08-14 10:46:24"
 last_modified_at:  2020-08-14 10:46:24 +0900
 categories: computerScience
@@ -27,16 +27,18 @@ tags:
   - sudo passwd test  
 
 
-
   - /etc/sudoers 설정 파일에서 설정 변경 가능  
+
 ```
-    - 특정 사용자가 sudo를 사용할 수 있도록 설정  
-      userid ALL=(ALL) ALL  
-    - 특정 그룹에 포함된 모든 사용자가 sudo를 사용할 수 있도록 설정  
-      %group  
-    - 패스워드 생략 설정  
-      %group ALL=(ALL) NOPASSWD: ALL  
-      userid ALL=(ALL) NOPASSWD: ALL  
+특정 사용자가 sudo를 사용할 수 있도록 설정  
+userid ALL=(ALL) ALL  
+
+특정 그룹에 포함된 모든 사용자가 sudo를 사용할 수 있도록 설정  
+%group  
+
+패스워드 생략 설정  
+%group ALL=(ALL) NOPASSWD: ALL  
+userid ALL=(ALL) NOPASSWD: ALL  
 ```
 
 
@@ -54,12 +56,14 @@ tags:
   - cd . : 현재 디렉토리  
   - cd .. : 상위 디렉토리  
 
+
 - ls : 파일 목록 출력  
   - ls -al : 숨김파일까지 전체 출력  
   - ls host* : host로 시작하는  
-    - * : 임의 문자열  
+    - `*` : 임의 문자열  
   - ls host? : host로 시작하고 뒤에 아무 문자 하나  
-    - ? : 문자 하나  
+    - `?` : 문자 하나  
+
 
 - man rm : 메뉴얼  
 
@@ -77,20 +81,22 @@ tags:
 
 - chmod : 파일 권한 변경  
 
-1. 기호 문자를 사용하는 방법  
-  - 누구?  
-    - u : 사용자  
-    - g : 그룹  
-    - o : 기타  
-    - a : 전부  
-  - 줄까 뺄까?  
-    - + : 더하기  
-    - - : 빼기  
-    - = : 설정  
-  - 어떤 권한?  
-    - r : 읽기  
-    - w : 쓰기  
-    - x : 실행  
+  1. 기호 문자를 사용하는 방법  
+    - 누구?  
+      - u : 사용자  
+      - g : 그룹  
+      - o : 기타  
+      - a : 전부  
+    - 줄까 뺄까?  
+      - + : 더하기  
+      - - : 빼기  
+      - = : 설정  
+    - 어떤 권한?  
+      - r : 읽기  
+      - w : 쓰기  
+      - x : 실행  
+
+
 ```
 chmod g+rw test.
 chmod u+rw test.
@@ -98,11 +104,12 @@ chmod ug+rw test.
 chomod u=rwx,g=rw,o=rx test.
 ```
 
-1. 숫자를 사용하는 방법  
 
-r = 2^2  
-w = 2^1  
-x = 2^0  
+  1. 숫자를 사용하는 방법  
+
+    r = 2^2  
+    w = 2^1  
+    x = 2^0  
 
 ```
 rwxrwxrwx = 777
@@ -121,6 +128,7 @@ chmod -R 777 directory
 
 - chown : 소유자 변경  
   - chown [옵션][소유자:소유그룹][파일]  
+
 ```
 chown root:root file
 chown root: file
@@ -129,9 +137,11 @@ chown :root file
 chown -R root:root directory
 ```
 
+
 - cat : 파일 보기  
 - head/tail : 시작, 끝 일부분 보여줌 (기본 10줄)  
 - more : 파일 보기 (화면이 넘어갈 경우 넘어가기 전까지 보여줌)  
+
 
 - rm : 파일 및 폴더 삭제  
   - rm -rf 디렉토리명  
