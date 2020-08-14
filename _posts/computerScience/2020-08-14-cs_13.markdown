@@ -96,32 +96,32 @@ userid ALL=(ALL) NOPASSWD: ALL
     - `w` : 쓰기  
     - `x` : 실행  
 
-  ```
-  chmod g+rw test.
-  chmod u+rw test.
-  chmod ug+rw test.
-  chomod u=rwx,g=rw,o=rx test.
-  ```
+    ```
+    chmod g+rw test.
+    chmod u+rw test.
+    chmod ug+rw test.
+    chomod u=rwx,g=rw,o=rx test.
+    ```
 
   2. 숫자를 사용하는 방법  
 
-  r = 2^2  
-  w = 2^1  
-  x = 2^0  
+      r = 2^2  
+      w = 2^1  
+      x = 2^0  
 
-```
-rwxrwxrwx = 777
-r-xr-xr-x = 555
-r-------- = 400
-rwx------ = 700
-```
-```
-chmod 400 mysecurity.pem
-```
-```
-# -R 하위 디렉토리 전체
-chmod -R 777 directory
-```
+    ```
+    rwxrwxrwx = 777
+    r-xr-xr-x = 555
+    r-------- = 400
+    rwx------ = 700
+    ```
+    ```
+    chmod 400 mysecurity.pem
+    ```
+    ```
+    # -R 하위 디렉토리 전체
+    chmod -R 777 directory
+    ```
 
 
 - chown : 소유자 변경  
