@@ -29,13 +29,13 @@ tags:
 
   - /etc/sudoers 설정 파일에서 설정 변경 가능  
 ```
-- 특정 사용자가 sudo를 사용할 수 있도록 설정  
+특정 사용자가 sudo를 사용할 수 있도록 설정  
 userid ALL=(ALL) ALL  
 
-- 특정 그룹에 포함된 모든 사용자가 sudo를 사용할 수 있도록 설정  
+특정 그룹에 포함된 모든 사용자가 sudo를 사용할 수 있도록 설정  
 %group  
 
-- 패스워드 생략 설정  
+패스워드 생략 설정  
 %group ALL=(ALL) NOPASSWD: ALL  
 userid ALL=(ALL) NOPASSWD: ALL  
 ```
@@ -123,13 +123,13 @@ chmod -R 777 directory
 
 - chown : 소유자 변경  
   - chown [옵션][소유자:소유그룹][파일]  
-  ```
-  chown root:root file
-  chown root: file
-  chown :root file
+```
+chown root:root file
+chown root: file
+chown :root file
 
-  chown -R root:root directory
-  ```
+chown -R root:root directory
+```
 
 
 - cat : 파일 보기  
