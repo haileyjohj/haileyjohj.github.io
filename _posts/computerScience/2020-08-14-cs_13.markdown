@@ -95,14 +95,12 @@ tags:
     - `r` : 읽기  
     - `w` : 쓰기  
     - `x` : 실행  
-
   ```
   chmod g+rw test.
   chmod u+rw test.
   chmod ug+rw test.
   chomod u=rwx,g=rw,o=rx test.
   ```
-
   11. 숫자를 사용하는 방법  
 
       r = 2^2  
