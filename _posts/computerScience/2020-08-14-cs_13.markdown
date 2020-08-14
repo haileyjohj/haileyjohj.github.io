@@ -95,6 +95,7 @@ tags:
     - `w` : 쓰기  
     - `x` : 실행  
 <br>
+
 ```
 chmod g+rw test.
 chmod u+rw test.
