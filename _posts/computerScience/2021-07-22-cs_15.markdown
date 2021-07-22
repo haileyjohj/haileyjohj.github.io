@@ -1,5 +1,5 @@
 ---
-title:  "[머리식히기] 가볍게 정리하는 개발 용어들"
+title:  "[머리식히기] 모두를 위한 IT 지식"
 excerpt: "2021-07-22 12:34:24"
 last_modified_at:  2021-07-22 12:34:24 +0900
 categories: computerScience
@@ -7,7 +7,7 @@ tags:
 - computerScience
 ---
 
-# 기초 IT 지식  
+# 프로그래머는 뭐하는 사람일까  
 
 패스트캠퍼스 강의 보면서 정리하고 있습니다  
 머리가 복잡할때는 기본으로 다시 돌아가야겠죠.
@@ -23,4 +23,80 @@ tags:
 
 * 개발자가 프로그래밍언어로 명령 문서를 컴퓨터가 이해하게 통역  
 
-#### IDE(Integrated Development Environment, 통합 개발 환경)  
+
+### IDE(Integrated Development Environment, 통합 개발 환경)  
+
+* Android Studio  
+* Eclipse  
+* Xcode  
+* Atom  
+
+
+### 운영체제 (Operating System)  
+
+* Window  
+* Mac  
+* iOS  
+* Android  
+
+
+### Linux의 Version  
+
+* Ubuntu  
+* Red hat  
+* Android  
+
+
+### API(Application programming Interface, 응용 프로그램 프로그래밍 인터페이스)  
+
+* 응용 프로그램에서 사용할 수 있도록 운영체제나 프로그래밍 언어가 제공하는 기능을 제어할 수 있게 만든 인터페이스를 뜻함  
+* Interface (인터페이스) : 컴퓨팅에서 컴퓨터 시스템끼리 정보를 교환하는 공유 경계  
+* SDK(Software Development Kit)  
+
+
+### HTTP 상태코드  
+
+🌝[위키백과 HTTP 상태 코드](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C)  
+
+
+### JSON  
+
+```
+{
+  키1(Key) : 값1(Value),
+  키2(Key) : 값2(Value),
+  키3(Key) : [값3, 값4, 값5]
+}
+
+```
+
+### HTML  
+### CSS  
+### Javascript  
+
+### 웹 브라우저의 파편화  
+
+* [Can i use?](https://caniuse.com/)
+
+### 반응형 웹  
+### 하이브리드 플리케이션  
+네이티브 애플리케이션 + 모바일 웹 앱  
+
+### DB  
+
+* RDB(Relational Database, 관계형 데이터 베이스)  
+* RDBMS(Relational Database Management System) : MySQL, ORACLE, MariaDB   
+
+
+### Framework & Library  
+
+프로그래밍언어 - 프레임워크  
+
+* Ruby - RAILS  
+* Java - Spring  
+* JS - Express  
+* Python - django  
+
+### 소스관리  
+
+* Github / bitbucket  
