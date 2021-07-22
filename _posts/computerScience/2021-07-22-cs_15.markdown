@@ -1,0 +1,54 @@
+---
+title:  "[머리식히기] 가볍게 정리하는 개발 용어들"
+excerpt: "2021-07-22 12:34:24"
+last_modified_at:  2021-07-22 12:34:24 +0900
+categories: computerScience
+tags:
+- computerScience
+---
+
+# 기초 IT 지식  
+
+패스트캠퍼스 강의 보면서 정리하고 있습니다  
+머리가 복잡할때는 기본으로 다시 돌아가야겠죠.
+
+
+
+### 개발자  
+
+* 컴퓨터와 소통을 위해 문서화 하는 사람
+
+
+### 컴파일러  
+
+* 개발자가 프로그래밍언어로 명령 문서를 컴퓨터가 이해하게 통역  
+
+#### IDE(Integrated Development Environment, 통합 개발 환경)  
+  1. ls > files.txt  
+      - ls로 출력되는 표준 출력 스트림의 방향을 files.txt로 바꿈
+    (files.txt에 ls로 출력되는 결과가 저장됨)  
+  1. head < files.txt  
+      - files.txt의 파일 내용이 head 명령으로 실행  
+    (files.txt의 앞 10라인이 출력)  
+  1. head < files.txt > files2.txt  
+      - files.txt의 파일 내용이 head로 실행  
+      - head의 출력 스트림이 files2.txt로 들어감  
+      - head는 files.txt 내용을 출력하지 않고 해당 출력이 다시 files2.txt에 저장  
+      - 결과적으로 files.txt의 앞 10라인이 files2.txt에 저장  
+  1. 기존 파일에 추가  
+      - >> , <<  
+      - ls >> files.txt  
+      - 기존에 있는 files.txt에 ls 출력 결과를 추가  
+
+
+### 파이프 (pipe)  
+
+* 두 프로세스 사이에서 한 프로세스의 출력 스트림을 또 다른 프로세스의 입력 스트림으로 사용할 때  
+
+
+#### 파이프 예  
+
+* ls | grep files.txt  
+  - ls 명령을 통한 출력 내용이 grep 명령의 입력 스트림으로 들어감  
+  - grep files.txt는 grep 명령의 입력 스트림을 검색해서 files.txt가 들어 있는 입력 내용만 출력  
+  - ls 명령으로 해당 디렉토리/파일 중 files.txt 파일이 있는지는 출력  

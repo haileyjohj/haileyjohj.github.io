@@ -1,0 +1,17 @@
+---
+title:  "[TIL] 2020년 12월 14일 월요일"
+date: 2020-12-14 0:03:24
+categories: TIL
+tags: TIL
+last_modified_at: 2020-12-14 0:03:24
+---
+
+>## 오늘 한 일
+
+- 백엔드 개발자 커리어  
+
+  - 컴퓨터 공학 지식 : 꾸준히 공부  
+    - operating system  
+    - 메모리 관리  
+    - process & thread  
+    - 네트워크  
