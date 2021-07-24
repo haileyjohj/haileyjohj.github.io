@@ -120,7 +120,7 @@ public class HashTableBasicTest {
   - 주요 메서드에 Synchronized 키워드가 없음  
   - Key, Value에 null 허용  
 
-```Java
+```java
 
 import java.util.HashMap;
 import java.util.Map.Entry;
