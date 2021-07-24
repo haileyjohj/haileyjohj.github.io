@@ -213,3 +213,41 @@ public class ConcurrentHashMapBasicTest {
 
 
 >### interface vs abstract  
+
+- interface(인터페이스) : 기본 설계도  
+  - 다중 상속 구현 가능  
+  - 추상 메서드, 상수만 선언 가능  
+  - 생성자, 일반 변수 가질 수 없음  
+  - 협업할 때 추상메서드를 통해 결과 예측하고 작업 가능, 구현 객체의 동일성 보장  
+
+- abstract(추상클래스) : 미완성 설계도  
+  - 다중 상속 불가  
+  - 상속을 위한 클래스이기 때문에 따로 객체 생성 불가  
+  - 추상 메서드 1개 이상, 일반 변수, 일반 메서드 선언 가능  
+  - 생성자, 일반 변수 가질 수 있음  
+  - 메서드 부분 구현 가능 (부분 구현된 메서드를 상속해 확장시키기 위함)  
+
+- 차이점  
+추상클래스는 IS - A "~이다".
+인터페이스는 HAS - A "~을 할 수 있는".
+
+
+>### String vs StringBuffer / StringBuilder  
+
+- String : 한번 생성되면 할당된 공간이 변하지 않음(불변)  
+- StringBuffer / StringBuilder : 객체의 공간이 부족해지는 경우 버퍼의 크기를 유연하게 늘려줌(가변)  
+
+>### StringBuffer vs StringBuilder  
+
+- StringBuffer
+  - 각 메소드 별로 Synchronized keyword가 존재  
+  - 멀티스레드 상태에서 동기화 지원  
+
+
+
+
+>### String vs StringBuffer vs StringBuilder  
+
+String : 문자열 연산이 적고 멀티쓰레드 환경일 경우  
+StringBuffer : 문자열 연산이 많고 멀티쓰레드 환경일 경우  
+StringBuilder : 문자열 연산이 많고 단일쓰레드이거나 동기화를 고려하지 않아도 되는 경우  
