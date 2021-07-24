@@ -6,8 +6,7 @@ toc_sticky: true
 toc_label: "페이지 주요 목차"
 date: 2021-07-24 10:53:24 +0900
 categories: Interview
-tags: Java
-Interview
+tags: Java Interview
 last_modified_at: 2021-07-24 10:53:24 +0900
 ---
 
