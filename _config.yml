@@ -12,12 +12,12 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "사적인 저장공간"
-title_separator          : "-"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "상상조각"
 description              : "programming study"
@@ -110,7 +110,7 @@ author:
   name             : "상상조각"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "천천히 배우며, 즐기는 개발자."
-  location         : "Tokyo, Japan"
+  location         : "Seoul, Korea"
   email            : "hyejin.jo.0920@gmail.com"
   links:
     - label: "Email"
