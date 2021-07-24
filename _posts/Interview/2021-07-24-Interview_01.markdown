@@ -5,8 +5,9 @@ toc: true
 toc_sticky: true
 toc_label: "페이지 주요 목차"
 date: 2021-07-24 10:53:24 +0900
-categories: Java, Interview
-tags: Java, Interview
+categories: Interview
+tags: Java
+Interview
 last_modified_at: 2021-07-24 10:53:24 +0900
 ---
 
@@ -56,3 +57,160 @@ last_modified_at: 2021-07-24 10:53:24 +0900
 
 
 >### 직렬화(Serialization)  
+
+Java에서 입출력 할 때는 스트림이라는 통로를 통해 데이터가 이동  
+객체는 바이트형이 아니라 스트림을 통해 저장하거나 네트워크 전송 불가  
+
+직렬화 : 바이트를 배열로 변환  
+역직렬화 : 스트림을 통해서 받은 직렬화된 객체를 원래 모양으로 만드는 과정  
+
+
+>### Boxing vs Unboxing  
+
+Boxing : 기본자료형(Primitive data type) → Wrapper class  
+Unboxing : Wrapper class → 기본자료형(Primitive data type)  
+
+
+>### Wrapper class 왜 사용할까?  
+
+1. 객체 또는 클래스가 제공하는 메서드 또는 생성자에 필요. 즉 기본형이 아닌 객체로 저장되어야 할 때 (ex:Map<String, Integer>)
+1. 클래스가 제공하는 상수 사용 (ex:MIN_VALUE and MAX_VALUE)  
+1. 숫자, 문자로의 형 변환 또는 진법 변환 (ex:Integer.parseInt)
+
+
+>### HashTable vs HashMap vs ConcurrentHashMap  
+
+- HashTable  
+  - put, get과 같은 주요 메소드에 Synchronized 키워드가 선언되어 있음  
+  - Key, Value에 null 허용하지 않음  
+
+```Java
+
+import java.util.Hashtable;
+
+public class HashTableBasicTest {
+	public static void main(String[] args) {
+		Hashtable<String, Integer> ht = new Hashtable<>();
+
+		ht.put("key", 0);
+
+		 // Hashtable은 값에 null 허용 안함
+
+		try{
+			ht.put("key2", null); // error!
+		} catch( Exception e ){
+			e.printStackTrace();
+		}
+
+
+		// Hashtable은 키값에 null을 허용 안함
+
+		try{
+			ht.put(null, 0); // error!
+		} catch( Exception e ){
+			e.printStackTrace();
+		}
+
+		// 해당 키 값을 가져온다.
+		ht.get("key"); // 0
+	}
+}
+```
+
+- HashMap  
+  - 주요 메서드에 Synchronized 키워드가 없음  
+  - Key, Value에 null 허용  
+
+```Java
+
+import java.util.HashMap;
+import java.util.Map.Entry;
+
+public class HashMapBasicTest {
+	public static void main(String[] args) {
+		HashMap<String, Integer> hm = new HashMap<>();
+
+		// 값 입력
+		hm.put("key", 0);
+
+		// HashMap은 값에 null 허용
+		hm.put("key2", null);
+
+		// HashMap은 키값에 null을허용
+		hm.put(null, 0);
+
+		// 값 출력
+		hm.get("key");
+
+		// 반복 처리 with keySet
+		for( String s : hm.keySet() ){
+			System.out.println(hm.get(s));
+		}
+
+		// 반복 처리 with entrySet
+		for( Entry<String, Integer> s : hm.entrySet() ){
+			System.out.println(s.getKey()+" "+s.getValue());
+		}
+	}
+}
+```
+
+- ConcurrentHashMap  
+  - HashMap을 Thread-safe 하도록 만든 클래스  
+  - Key, Value에 null 허용 안함  
+  - putIfAbsent 라는 메소드를 가지고 있음  
+
+```java
+import java.util.concurrent.ConcurrentHashMap;
+
+public class ConcurrentHashMapBasicTest {
+
+	public static void main(String[] args) {
+
+		ConcurrentHashMap<String, Integer> chm = new ConcurrentHashMap<>();
+
+		// 값 입력
+		chm.put("key", 0);
+
+		// ConcurrentHashMap은 값에 null을 허용 안험
+
+		try{
+			chm.put("key1", null); // error!
+		} catch( Exception e ){
+			e.printStackTrace();
+		}
+
+		// ConcurrentHashMap은 키값에 null을 허용 안함
+
+		try{
+			chm.put(null, 0); // error!
+		} catch( Exception e ){
+			e.printStackTrace();
+		}
+
+		/*
+		 * putIfAbsent 메소드는 키값이 존재하면 기존의 값을 반환하고
+		 * 없다면 입력한 값을 저장한 뒤 반환.
+		 * 따라서 아래의 코드는 이미 key라는 값에 0이라는 값이 있으므로
+		 * key 값은 0을 반환.
+		 */
+		chm.putIfAbsent("key", 1);
+
+		/*
+		 * 아래 코드는 key2의 값이 없기 때문에 -1을 저장하고 반환.
+		 */
+		chm.putIfAbsent("key2", -1);
+
+		for( String s : chm.keySet() ){
+			System.out.println(chm.get(s)); // print -1, 0
+		}
+	}
+}
+```
+
+>### 제어자  
+
+🐽 [Java기초이론 : 제어자](https://haileyjohj.github.io/javabasic/2019/09/16/java-basics_09/)
+
+
+>### interface vs abstract  
