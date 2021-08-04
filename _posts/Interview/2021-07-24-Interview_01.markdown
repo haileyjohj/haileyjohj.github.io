@@ -241,9 +241,11 @@ public class ConcurrentHashMapBasicTest {
 
 - StringBuffer
   - 각 메소드 별로 Synchronized keyword가 존재  
-  - 멀티스레드 상태에서 동기화 지원  
+  - 멀티스레드 상태에서 `동기화` 지원  
 
-
+- StringBuilder  
+  - `동기화`를 지원하지 않기때문에 멀티스레드 환경에 적합하지 않음  
+  - 단일스레드에서는 성능이 StringBuffer보다 뛰어남  
 
 
 >### String vs StringBuffer vs StringBuilder  
