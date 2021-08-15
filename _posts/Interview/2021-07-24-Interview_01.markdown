@@ -255,4 +255,26 @@ StringBuffer : 문자열 연산이 많고 멀티쓰레드 환경일 경우
 StringBuilder : 문자열 연산이 많고 단일쓰레드이거나 동기화를 고려하지 않아도 되는 경우  
 
 
->### fk
+>### try-with-resource  
+
+Java7부터 Try-with-resources 구문을 지원하고 이것을 사용하면 자원을 쉽게 해제할 수 있음.
+try-with-resources는 try(...)에서 선언된 객체들에 대해서 try가 종료될 때 자동으로 자원을 해제해주는 기능.   
+try에서 선언된 객체가 AutoCloseable을 구현하였다면 Java는 try구문이 종료될 때 객체의 close() 메소드를 호출.  
+
+
+>### Synchronized(동기화)  
+
+동기화는 여러 개의 쓰레드가 하나의 자원에 접근하려 할 때 주어진 순간에는 단 하나의 쓰레드만이 접근 가능하도록 하는 것  
+
+
+>### Synchronized(동기화)를 하기 위한 방법  
+
+synchronized 함수(메서드)를 만들어 사용.  
+synchronized 블록(block) 사용.  
+
+>### 자바의 메모리 영역  
+
+🐽 [Java기초이론 : JVM 메모리 구조](https://haileyjohj.github.io/javabasic/2019/09/01/java_basics_01/)  
+
+
+>### 자바의 메모리 영역  
