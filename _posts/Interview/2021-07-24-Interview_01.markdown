@@ -351,3 +351,10 @@ synchronized 블록(block) 사용.
 
 
 >### CheckedException vs UnCheckedException  
+
+|   |CheckedException|UnCheckedException|
+|---|---|---|
+|처리여부|반드시 예외를 처리|예외 처리를 강제하지 않음|
+|확인시점|컴파일 단계|실행(Runtime) 단계|
+|예외발생시 트랜잭션 처리|Roll-Back 하지 않음|Roll-Back 함|
+|예외종류|Runtime Exception을 제외한 모든 예외|Runtime Exception 하위 예외|
