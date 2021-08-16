@@ -83,7 +83,7 @@ Unboxing : Wrapper class → 기본자료형(Primitive data type)
   - put, get과 같은 주요 메소드에 Synchronized 키워드가 선언되어 있음  
   - Key, Value에 null 허용하지 않음  
 
-```Java
+```java
 
 import java.util.Hashtable;
 
@@ -358,3 +358,23 @@ synchronized 블록(block) 사용.
 |확인시점|컴파일 단계|실행(Runtime) 단계|
 |예외발생시 트랜잭션 처리|Roll-Back 하지 않음|Roll-Back 함|
 |예외종류|Runtime Exception을 제외한 모든 예외|Runtime Exception 하위 예외|
+
+
+>### final / finally / finalize()  
+
+- final  
+  - final class : 다른 클래스에서 상속할 수 없음  
+  - final method : 다른 메소드에서 오버라이딩 할 수 없음  
+  - final variable : 변하지 않는 상수값이 되어 새로 할당할 수 없는 변수가 됨  
+
+- finally  
+  try-catch, try-catch-resource 구문을 사용할 때 정상적으로 작업을 한 경우와 에러가 발생했을 경우를 모두 포함하여 마무리 해줘야 하는 작업이 존재하는 경우에 해당하는 코드를 작성해주는 코드 블록  
+
+-  finalize()  
+  GC에 의해 호출되는 함수로 절대 호출해서는 안되는 함수. GC가 발생하는 시점이 불분명하기 때문에 해당 메소드가 실행된다는 보장이 없음  
+
+
+>### new String()과 “”의 차이  
+
+- "" : Java에서 문자열은 Heap 영역 String pool에서 관리하고 해당 값은 참조 값을 가지게 됨  
+- new String() : Heap 영역에서 새로운 객체를 등록하게 됨  
