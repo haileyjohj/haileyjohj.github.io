@@ -6,7 +6,7 @@ toc_sticky: true
 toc_label: "페이지 주요 목차"
 date: 2021-08-17 00:43:24 +0900
 categories: Interview
-tags: Database Interview
+tags: Spring Interview
 last_modified_at: 2021-08-17 00:43:24 +0900
 ---
 
