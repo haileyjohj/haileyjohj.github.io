@@ -23,5 +23,5 @@ toc: true
 ### Windows Application    
 
 - 2018.09 ~ 2020.07  
-  사내 인사관리 사이트 개발 / 운용   
+  [Nextnavi](https://www.ut-tech.jp/nextnavi/) 사내 인사관리 사이트 개발 / 운용   
   `Java` `AngularJs` `MySQL`  
