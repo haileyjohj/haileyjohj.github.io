@@ -1,87 +1,75 @@
 ---
-title:  "[알고리즘] 02.Array(1,2차원배열) / 09. 격자판 최대합"
-excerpt: "2022-02-06 21:41:24"
-last_modified_at:  2022-02-06 21:41:24 +0900
+title:  "[알고리즘] 02.Array(1,2차원배열) / 08. 등수구하기"
+excerpt: "2022-02-06 21:37:24"
+last_modified_at:  2022-02-06 21:37:24 +0900
 categories: Algorithm
 tags:
 - Java알고리즘
 ---
 
-># 격자판 최대합  
+># 등수구하기  
 
 ### 설명  
 
-5*5 격자판에 아래롸 같이 숫자가 적혀있습니다.  
-![](https://cote.inflearn.com/public/upload/4897574b00.jpg)  
-N*N의 격자판이 주어지면 각 행의 합, 각 열의 합, 두 대각선의 합 중 가 장 큰 합을 출력합니다.  
+N명의 학생의 국어점수가 입력되면 각 학생의 등수를 입력된 순서대로 출력하는 프로그램을 작성하세요.  
+같은 점수가 입력될 경우 높은 등수로 동일 처리한다.  
+즉 가장 높은 점수가 92점인데 92점이 3명 존재하면 1등이 3명이고 그 다음 학생은 4등이 된다.  
 
 
 ### 입력  
 
-첫 줄에 자연수 N이 주어진다.(2<=N<=50)  
-두 번째 줄부터 N줄에 걸쳐 각 줄에 N개의 자연수가 주어진다. 각 자연수는 100을 넘지 않는다.  
+첫 줄에 N(3<=N<=100)이 입력되고, 두 번째 줄에 국어점수를 의미하는 N개의 정수가 입력된다.  
 
 
 ### 출력  
 
-최대합을 출력합니다.   
+입력된 순서대로 등수를 출력한다.   
 
 
 예시 입력 1   
 ```
 5
-10 13 10 12 15
-12 39 30 23 11
-11 25 50 53 15
-19 27 29 37 27
-19 13 30 13 19
+87 89 92 100 76
 ```
 예시 출력 1  
 ```
-155
+4 3 2 1 5
 ```
 
 
 ### 코드  
 
 ```java
+
 import java.util.Scanner;
-public class JC_0209 {
+public class JC_0208 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		JC_0209 T = new JC_0209();
+		JC_0208 T = new JC_0208();
 		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
 
-		int[][] arr = new int[num][num];
+		int[] arr = new int[num];
 		for(int i=0; i<num; i++) {
-			for(int j=0; j<num; j++) {
-				arr[i][j] = sc.nextInt();
-			}
+			arr[i] = sc.nextInt();
 		}
-		System.out.print(T.solution(num, arr));
+		for(int x : T.solution(num, arr)) {
+			System.out.print(x + " ");
+		}
 	}
 
-
-	public int solution(int n, int[][] arr) {
-		int maxSum = Integer.MIN_VALUE;
-		int sumL =0, sumR =0, sumW, sumH;;
-
+	public int[] solution(int n, int[] arr) {
+		int[] score = new int[n];
 		for(int i=0; i<n; i++) {
-			sumW = sumH =0;
-
+			score[i] = 1;
 			for(int j=0; j<n; j++) {
-				sumW += arr[i][j];
-				sumH += arr[j][i];
+				if(arr[i] < arr[j]) {
+					score[i]++;
+				}
 			}
-			maxSum = Math.max(maxSum, Math.max(sumW, sumH));
-
-			sumR += arr[i][i];
-			sumL += arr[i][n-i-1];
 		}
-		maxSum = Math.max(maxSum, Math.max(sumR, sumL));
-		return maxSum;
+		return score;
 	}
 }
 ```

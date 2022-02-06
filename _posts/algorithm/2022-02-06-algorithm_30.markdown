@@ -62,10 +62,6 @@ public class JC_0207 {
 		System.out.print(T.solution(num, arr));
 	}
 
-	//10
-	//1 0 1 1 1 0 0 1 1 0
-	//1 0 1 2 3 0 0 1 2 0 cnt
-	//1 1 2 4 7 7 7 8 10 10 answer
 	public int solution(int n, int[] arr) {
 		int answer = 0;
 		int cnt = 0;
