@@ -62,44 +62,70 @@ COOL
 ### 코드  
 
 ```java
-import java.util.Scanner;
-public class JC_0111 {
+/*import java.util.*;
+public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		JC_0111 T = new JC_0111();
+		Main T = new Main();
 		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
 		String str = sc.next();
-		System.out.print(T.solution(str));
+		System.out.print(T.solution(num, str));
 	}
 
-	//KKHSSSSSSSE
-	//KSTTTSEEKFKKKDJJGG
-	public String solution(String str) {
+	public String solution(int num, String str) {
 
-		String answer = str.charAt(0)+"";
-		char c = str.charAt(0); //비교할 대상
-		int count = 1; //카운트
+		String answer = "";
 
-		for(int i=1; i<str.length(); i++) {
-			if(c == str.charAt(i)) { //같으면
-				count++;
-				c = str.charAt(i);
-			}else { //다르면
-				if(count != 1) {
-					answer += count;
-				}
-				count = 1;
-				c = str.charAt(i);
-				answer += c;
-			}
+		for(int i=0; i<num; i++) {
+			String tmp = str.substring(0,7).replace("#", "1").replace("*", "0");
+			answer += (char)Integer.parseInt(tmp, 2);
+			str = str.substring(7);
 		}
-		//마지막 비교대상
-		if(count != 1) {
-			answer += count;
-		}
-
 		return answer;
 	}
+}*/
+
+
+import java.util.Scanner;
+public class JC_0112 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JC_0112 T = new JC_0112();
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		String str = sc.next();
+		System.out.print(T.solution(num, str));
+	}
+
+	//#*****#
+	//0123456 7890123 4567890 1234567
+	//#****## #**#### #**#### #**##**
+	//#****###**#####**#####**##**
+	public String solution(int num, String str) {
+
+		String answer = "";
+		String result = "";
+		String[] arrStr = new String[num];
+
+		for(int i=0; i<str.length(); i++) {
+			if((str.charAt(i)+"").equals("#")) {
+				answer += 1;
+			}else {
+				answer += 0;
+			}
+		}
+
+		for(int i=0; i<num; i++) {
+			//0-7, 7-14, 20, 27
+			arrStr[i] = answer.substring(i*7,(i*7)+7);
+			//System.out.println(i +" : " + arrStr[i] + " / " + (char)Integer.parseInt(arrStr[i],2));
+			result += (char)Integer.parseInt(arrStr[i],2);
+		}
+		return result;
+	}
 }
+
 ```
