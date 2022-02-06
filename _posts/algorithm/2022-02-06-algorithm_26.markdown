@@ -1,7 +1,7 @@
 ---
 title:  "[알고리즘] 02.Array(1,2차원배열) / 02.보이는 학생"
-excerpt: "2022-02-06 20:52:24"
-last_modified_at:  2022-02-06 20:52:24 +0900
+excerpt: "2022-02-06 21:24:24"
+last_modified_at:  2022-02-06 21:24:24 +0900
 categories: Algorithm
 tags:
 - Java알고리즘
