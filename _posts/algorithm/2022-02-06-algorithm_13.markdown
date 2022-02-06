@@ -1,5 +1,5 @@
 ---
-title:  "[알고리즘:String] 01_02 대소문자 변환"
+title:  "[알고리즘] 01.String / 02.대소문자 변환"
 excerpt: "2022-02-06 19:50:24"
 last_modified_at:  2022-02-06 19:50:24 +0900
 categories: Algorithm
