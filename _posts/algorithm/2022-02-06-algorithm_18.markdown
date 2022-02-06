@@ -41,25 +41,27 @@ YES
 ```java
 import java.util.Scanner;
 
-public class JC_0106 {
+public class JC_0107 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		JC_0106 T = new JC_0106();
+		JC_0107 T = new JC_0107();
 		Scanner sc = new Scanner(System.in);
 		String str = sc.next();
-
 		System.out.println(T.solution(str));
 	}
 
 	public String solution(String str) {
 		String answer = "";
-		//ksekkset
-		for(int i=0; i<str.length(); i++) {
-			//System.out.println(str.charAt(i)+" "+i+" "+str.indexOf(str.charAt(i)));
-			if(str.indexOf(str.charAt(i))==i) {
-				answer+=str.charAt(i);
-			}
+		str = str.toLowerCase();
+		System.out.println(str);
+		String cStr = new StringBuilder(str).reverse().toString();
+		int result = str.compareTo(cStr);
+
+		if(result == 0) {
+			answer = "YES";
+		}else {
+			answer = "NO";
 		}
 		return answer;
 	}
