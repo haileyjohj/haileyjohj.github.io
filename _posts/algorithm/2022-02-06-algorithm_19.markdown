@@ -27,11 +27,11 @@ tags:
 첫 번째 줄에 팰린드롬인지의 결과를 YES 또는 NO로 출력합니다.  
 
 
-- 예시 입력 1   
+예시 입력 1   
 ```
 found7, time: study; Yduts; emit, 7Dnuof
 ```
-- 예시 출력 1  
+예시 출력 1  
 ```
 YES
 ```

@@ -32,6 +32,7 @@ it is time to study
 study
 ```
 
+### 코드  
 
 ```java
 import java.util.Scanner;

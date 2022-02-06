@@ -32,6 +32,8 @@ sTUdy
 ```
 
 
+### 코드  
+
 ```java
 import java.util.Scanner;
 
