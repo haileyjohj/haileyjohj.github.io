@@ -41,7 +41,8 @@ N개의 자연수가 입력되면 각 자연수를 뒤집은 후 그 뒤집은 �
 ### 코드  
 
 ```java
-/*import java.util.ArrayList;
+//방법1
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Main {
 
@@ -61,8 +62,7 @@ public class Main {
 
 	}
 
-	//9
-	//32 55 62 20 250 370 200 30 100
+
 	public ArrayList<Integer> solution(int n, int[] arr) {
 		ArrayList<Integer> answer = new ArrayList<>();
 
@@ -93,9 +93,10 @@ public class Main {
 		return true;
 	}
 }
-*/
+```
 
-
+```java
+//방법2
 import java.util.ArrayList;
 import java.util.Scanner;
 public class JC_0206 {
