@@ -1,6 +1,6 @@
 ---
 title:  "[알고리즘] 01.String / 01.문자 찾기"
-excerpt: "2022-01-01 19:50:24"
+excerpt: "2022-02-06 19:50:24"
 last_modified_at:  2022-02-06 19:50:24 +0900
 categories: Algorithm
 tags:
