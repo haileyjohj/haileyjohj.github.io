@@ -1,5 +1,5 @@
 ---
-title:  "[알고리즘] 05.Stack, Queue(자료구조) / 05. 쇠막대기
+title:  "[알고리즘] 05.Stack, Queue(자료구조) / 05. 쇠막대기"
 excerpt: "2022-02-11 02:14:24"
 last_modified_at:  2022-02-11 02:14:24 +0900
 categories: Algorithm

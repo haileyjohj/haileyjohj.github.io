@@ -1,5 +1,5 @@
 ---
-title:  "[알고리즘] 05.Stack, Queue(자료구조) / 01. 올바른 괄호
+title:  "[알고리즘] 05.Stack, Queue(자료구조) / 01. 올바른 괄호"
 excerpt: "2022-02-10 17:22:24"
 last_modified_at:  2022-02-10 17:22:24 +0900
 categories: Algorithm

@@ -1,5 +1,5 @@
 ---
-title:  "[알고리즘] 05.Stack, Queue(자료구조) / 02. 괄호문자제거
+title:  "[알고리즘] 05.Stack, Queue(자료구조) / 02. 괄호문자제거"
 excerpt: "2022-02-10 17:22:24"
 last_modified_at:  2022-02-10 17:22:24 +0900
 categories: Algorithm
@@ -36,7 +36,6 @@ EFLM
 ### 느낀점  
 
 좀 더 단순하게 생각해도 좋을 것 같다  
-  
 
 
 ### 코드  

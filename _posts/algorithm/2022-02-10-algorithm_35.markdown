@@ -1,5 +1,5 @@
 ---
-title:  "[알고리즘] 04.HashMap, TreeSet / 03. 매출액의 종류
+title:  "[알고리즘] 04.HashMap, TreeSet / 03. 매출액의 종류"
 excerpt: "2022-02-10 16:28:24"
 last_modified_at:  2022-02-10 16:28:24 +0900
 categories: Algorithm
@@ -49,6 +49,7 @@ N일간의 매출기록과 연속구간의 길이 K가 주어지면 첫 번째 �
 ### 느낀점  
 
 lt, rt 이용!  
+같은 구간을 구할 때 유용하게 사용 가능  
 같은 구간을 구할 때 유용하게 사용 가능  
 
 
