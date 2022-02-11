@@ -1,0 +1,112 @@
+---
+title:  "[알고리즘] 06.정렬, 이분검색과 결정알고리즘 / 04. Least Recently Used"
+excerpt: "2022-02-11 17:59:24"
+last_modified_at:  2022-02-11 17:59:24 +0900
+categories: Algorithm
+tags:
+- Java알고리즘
+---
+
+># Least Recently Used  
+
+### 설명  
+
+캐시메모리는 CPU와 주기억장치(DRAM) 사이의 고속의 임시 메모리로서 CPU가 처리할 작업을 저장해 놓았다가 필요할 바로 사용해서 처리속도를 높이는 장치이다. 워낙 비싸고 용량이 작아 효율적으로 사용해야 한다.  
+철수의 컴퓨터는 캐시메모리 사용 규칙이 LRU 알고리즘을 따른다.  
+LRU 알고리즘은 Least Recently Used 의 약자로 직역하자면 가장 최근에 사용되지 않은 것 정도의 의미를 가지고 있습니다.  
+캐시에서 작업을 제거할 때 가장 오랫동안 사용하지 않은 것을 제거하겠다는 알고리즘입니다.  
+
+![](https://cote.inflearn.com/public/upload/c366c701c2.jpg)  
+
+캐시의 크기가 주어지고, 캐시가 비어있는 상태에서 N개의 작업을 CPU가 차례로 처리한다면 N개의 작업을 처리한 후 캐시메모리의 상태를 가장 최근 사용된 작업부터 차례대로 출력하는 프로그램을 작성하세요.  
+
+
+### 입력  
+
+첫 번째 줄에 캐시의 크기인 S(3<=S<=10)와 작업의 개수 N(5<=N<=1,000)이 입력된다.  
+두 번째 줄에 N개의 작업번호가 처리순으로 주어진다. 작업번호는 1 ~100 이다.   
+
+
+### 출력  
+
+마지막 작업 후 캐시메모리의 상태를 가장 최근 사용된 작업부터 차례로 출력합니다.   
+
+
+예시 입력 1   
+```
+5 9
+1 2 3 2 6 2 3 5 7
+```
+예시 출력 1  
+```
+7 5 3 2 6
+```
+
+### 느낀점  
+
+어느쪽이 기준이 되는지, 어디까지 for문이 돌아야 하는지 생각!   
+
+
+#### 버블정렬  
+
+- 삽입 정렬(insertion sort) 알고리즘의 특징  
+	- 장점  
+	구현이 간단하다.    
+
+	- 단점  
+	순서에 맞지 않은 요소를 인접한 요소와 교환한다.  
+	하나의 요소가 가장 왼쪽에서 가장 오른쪽으로 이동하기 위해서는 배열에서 모든 다른 요소들과 교환되어야 한다.  
+	특히 특정 요소가 최종 정렬 위치에 이미 있는 경우라도 교환되는 일이 일어난다.  
+	일반적으로 자료의 교환 작업(SWAP)이 자료의 이동 작업(MOVE)보다 더 복잡하기 때문에 버블 정렬은 단순성에도 불구하고 거의 쓰이지 않는다.  
+
+
+![](https://media.vlpt.us/images/jaeyunn_15/post/ff10da68-72c8-465e-9da8-9260b26db9a9/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-03-07%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2011.32.57.png)
+
+출처 : [[Algorithm] 각 정렬의 특징 및 장단점 & 시간복잡도](https://coding-factory.tistory.com/615?category=794828)  
+
+
+### 코드  
+
+```java
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Main T = new Main();
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] arr = new int[n];
+		for(int i=0; i<n; i++) {
+			arr[i] = sc.nextInt();
+		}
+		for(int x : T.solution(n, arr)) {
+			System.out.print(x + " " );
+		}
+	}
+
+	/*
+	삽입정렬
+	6
+	13 5 11 7 23 15
+	*/
+
+	public int[] solution(int n, int[] arr) {
+
+		for(int i=1; i<n; i++) {
+			int tmp = arr[i], j;
+			for(j=i-1; j>=0; j--) {
+				if(arr[j] > tmp) {
+					arr[j+1] = arr[j];
+				}else {
+					break;
+				}
+			}
+			arr[j+1] = tmp;
+		}
+		return arr;
+	}
+}
+
+
+```
