@@ -1,0 +1,103 @@
+---
+title:  "[알고리즘] 06.정렬, 이분검색과 결정알고리즘 / 02. 버블 정렬"
+excerpt: "2022-02-11 17:59:24"
+last_modified_at:  2022-02-11 17:59:24 +0900
+categories: Algorithm
+tags:
+- Java알고리즘
+---
+
+># 버블 정렬  
+
+### 설명  
+
+N개이 숫자가 입력되면 오름차순으로 정렬하여 출력하는 프로그램을 작성하세요.  
+정렬하는 방법은 버블정렬입니다.   
+
+
+### 입력  
+
+첫 번째 줄에 자연수 N(1<=N<=100)이 주어집니다.  
+두 번째 줄에 N개의 자연수가 공백을 사이에 두고 입력됩니다. 각 자연수는 정수형 범위 안에 있습니다.   
+
+
+### 출력  
+
+오름차순으로 정렬된 수열을 출력합니다.   
+
+
+예시 입력 1   
+```
+6
+13 5 11 7 23 15
+```
+예시 출력 1  
+```
+5 7 11 13 15 23
+```
+
+### 느낀점  
+
+어느쪽이 기준이 되는지, 어디까지 for문이 돌아야 하는지 생각!   
+
+
+#### 버블정렬  
+
+- 삽입 정렬(insertion sort) 알고리즘의 특징  
+	- 장점  
+	구현이 간단하다.    
+
+	- 단점  
+	순서에 맞지 않은 요소를 인접한 요소와 교환한다.  
+	하나의 요소가 가장 왼쪽에서 가장 오른쪽으로 이동하기 위해서는 배열에서 모든 다른 요소들과 교환되어야 한다.  
+	특히 특정 요소가 최종 정렬 위치에 이미 있는 경우라도 교환되는 일이 일어난다.  
+	일반적으로 자료의 교환 작업(SWAP)이 자료의 이동 작업(MOVE)보다 더 복잡하기 때문에 버블 정렬은 단순성에도 불구하고 거의 쓰이지 않는다.  
+
+
+![](https://media.vlpt.us/images/jaeyunn_15/post/ff10da68-72c8-465e-9da8-9260b26db9a9/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-03-07%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2011.32.57.png)
+
+출처 : [[Algorithm] 각 정렬의 특징 및 장단점 & 시간복잡도](https://coding-factory.tistory.com/615?category=794828)  
+
+
+### 코드  
+
+```java
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Main T = new Main();
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] arr = new int[n];
+		for(int i=0; i<n; i++) {
+			arr[i] = sc.nextInt();
+		}
+		for(int x : T.solution(n, arr)) {
+			System.out.print(x + " " );
+		}
+	}
+
+	/*
+	버블정렬
+	6
+	13 5 11 7 23 15
+	*/
+
+	public int[] solution(int n, int[] arr) {
+
+		for(int i=0; i<n-1; i++) {
+			for(int j=0; j<n-i-1; j++) {
+				if(arr[j] > arr[j+1]) {
+					int tmp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = tmp;
+				}
+			}
+		}
+		return arr;
+	}
+}
+
+```
