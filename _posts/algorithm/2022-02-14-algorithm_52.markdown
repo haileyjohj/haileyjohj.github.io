@@ -1,7 +1,7 @@
 ---
 title:  "[알고리즘] 06.정렬, 이분검색과 결정알고리즘 / 09. 뮤직비디오(결정알고리즘)"
-excerpt: "2022-02-13 00:23:24"
-last_modified_at:  2022-02-13 00:23:24 +0900
+excerpt: "2022-02-13 02:12:24"
+last_modified_at:  2022-02-13 01:12:24 +0900
 categories: Algorithm
 tags:
 - Java알고리즘
@@ -57,7 +57,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		Main T = new Main();
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt(); //노래 개수
+		int n = sc.nextInt(); //노래 수
 		int m = sc.nextInt(); //dvd 장수
 		int[] arr = new int[n];
 
