@@ -24,15 +24,15 @@ tags:
 
 >### Java 버전 변경 스크립트 설정  
 
-![](assets\images\post\java\2022-02-20-java_04_01.JPG)  
+![](/assets/images/post/java/2022-02-20-java_04_01.JPG)  
 
-1. Java 폴더에 scripts 폴더 추가로 생성  
+1) Java 폴더에 scripts 폴더 추가로 생성  
 
-![](assets\images\post\java\2022-02-20-java_04_02.JPG)  
+![](/assets/images/post/java/2022-02-20-java_04_02.JPG)  
 
-2. 환경 변수에서 Path 변수를 클릭하고 scripts 폴더를 추가  
+2) 환경 변수에서 Path 변수를 클릭하고 scripts 폴더를 추가  
 
-3. Java 버전별로 .bat 파일을 만들어주기  
+3) Java 버전별로 .bat 파일을 만들어주기  
 
 `java8.bat`
 
@@ -53,6 +53,6 @@ echo Java 11 activated.
 java -version
 ```
 
-![](assets\images\post\java\2022-02-20-java_04_03.JPG)  
+![](/assets/images/post/java/2022-02-20-java_04_03.JPG)  
 
-4. cmd에서 .bat 파일명을 입력하면 버전이 변경된다  
+4) cmd에서 .bat 파일명을 입력하면 버전이 변경된다  
