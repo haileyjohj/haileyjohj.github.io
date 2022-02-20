@@ -1,0 +1,58 @@
+---
+title:  "[Java] 설치한 여러개의 JDK 간편하게 전환하기"
+excerpt: "2022-02-20 17:05:24"
+last_modified_at:   2022-02-20 17:05:24 +0900
+categories: Java
+tags:
+- Java
+---
+
+>## 여러 버전의 Java 간편하게 전환  
+
+이번에 스프링 학습을 다시 시작하며 Java 11버전을 설치하게 되었는데  
+기존에 진행중이던 작업들은 Java 8버전이라 두 버전을 간편하게 전환할 수 있도록 설정을 다시 해주었다.  
+
+
+>### Java 환경 변수 설정  
+
+- 환경변수 이동  
+- 시스템 변수 새로 만들기  
+- 변수 이름 : JAVA_HOME, 변수값은 JDK 경로  
+- Path 변수 편집   
+- %JAVA_HOME%\bin 입력  
+
+
+>### Java 버전 변경 스크립트 설정  
+
+![](assets\images\post\java\2022-02-20-java_04_01.JPG)  
+
+1. Java 폴더에 scripts 폴더 추가로 생성  
+
+![](assets\images\post\java\2022-02-20-java_04_02.JPG)  
+
+2. 환경 변수에서 Path 변수를 클릭하고 scripts 폴더를 추가  
+
+3. Java 버전별로 .bat 파일을 만들어주기  
+
+`java8.bat`
+
+```
+@echo off
+set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_201
+set Path=%JAVA_HOME%\bin;%Path%
+echo Java 8 activated.
+java -version
+```
+
+`java11.bat`
+```
+@echo off
+set JAVA_HOME=C:\Program Files\Java\jdk-11.0.14
+set Path=%JAVA_HOME%\bin;%Path%
+echo Java 11 activated.
+java -version
+```
+
+![](assets\images\post\java\2022-02-20-java_04_03.JPG)  
+
+4. cmd에서 .bat 파일명을 입력하면 버전이 변경된다  
